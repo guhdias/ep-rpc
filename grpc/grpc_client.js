@@ -8,7 +8,7 @@ function main() {
                                        grpc.credentials.createInsecure());
   
   var numTeste = 0;
-  var totalTestes = 10;
+  var totalTestes = 100;
   var tempos = [];
 
 /**
@@ -37,12 +37,13 @@ function main() {
     tempos[numTeste] = ((tempoFim[0]*1000) + (tempoFim[1]/1000000)); // converter o tempo para milisegundos
   }
 
-// cálculo e exibicao da media e desvio padrao
-  console.log("Estatisticas de tempos para o Teste 1:");
+// cálculo e exibicao das estatísticas
+  console.log("------- TESTE 1: argumento e retorno inteiros aleatórios de 0 a 100.000 -------");
   console.log("Execucoes:", totalTestes);
   console.log('Media:', media(tempos));
   console.log('Desvio Padrao:', desvioPadrao(tempos));
-
+  console.log('Maxima:', Math.max.apply(null, tempos));
+  console.log('Minima:', Math.min.apply(null, tempos));
 }
 
 function desvioPadrao(values){
