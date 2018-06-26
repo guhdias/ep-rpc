@@ -9,13 +9,15 @@ package ep;
 
 // Definicao do servico.
 service Teste {
-  rpc Teste1 (Request1) returns (Reply1) {}
+  rpc Teste0 (RequestInt) returns (ReplyInt) {}
+  rpc Teste1 (RequestInt) returns (ReplyInt) {}
+  rpc Teste2 (RequestInt) returns (ReplyInt) {}
 }
 
-message Request1 {
-int32 valorRequest1 = 0;
+message RequestInt {
+	int32 valorRequestInt = 0;
 }
 
-message Reply1 {
-int32 valorReply1 = 0;
+message ReplyInt {
+	int32 valorReplyInt = 0;
 }

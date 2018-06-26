@@ -4,8 +4,16 @@ var grpc = require('grpc');
 var ep_proto = grpc.load(PROTO_PATH).ep;
 
 // Implementacao do metodo
+function Teste0(call, callback) {
+  callback(null, {valorReplyInt: 0});
+}
+
 function Teste1(call, callback) {
-  callback(null, {valorReply1: gerarAleatorio(0,100000)});
+  callback(null, {valorReplyInt: gerarAleatorio(1,10)});
+}
+
+function Teste2(call, callback) {
+  callback(null, {valorReplyInt: gerarAleatorio(2000000000,2147483647)});
 }
 
 /**
@@ -13,7 +21,7 @@ function Teste1(call, callback) {
 */
 function main() {
   var server = new grpc.Server();
-  server.addService(ep_proto.Teste.service, {Teste1: Teste1});
+  server.addService(ep_proto.Teste.service, {Teste0: Teste0, Teste1: Teste1, Teste2: Teste2});
   server.bind('0.0.0.0:50051', grpc.ServerCredentials.createInsecure());
   server.start();
 }
