@@ -14,6 +14,7 @@ function main() {
   teste0();
   teste1();
   teste2();
+  teste3();
 
 }
 
@@ -123,6 +124,43 @@ function teste2(){
 }
 
 /**
+ * Teste 3 - argumento e retorno strings tamanho 1
+*/
+
+function teste3(){
+// criar o array de parametros aleatorios que serao enviados
+  var parametros = []
+   for (numTeste = 0; numTeste < totalTestes + 1; numTeste++) {
+    parametros[numTeste] = stringAleatoria(1);
+  }
+
+// primeira chamada nao eh considerada no teste pois o tempo eh um valor extremo em comparacao as demais
+  client.Teste3({valorRequestString: parametros[0]}, function(err, response) {
+    if (err) {console.log(err)};
+  });
+
+// realizacao dos testes na quantidade de vezes determinada e armazenamento dos tempos no array
+
+  for (numTeste = 0; numTeste < totalTestes + 1; numTeste++) {
+    var tempoInicio = process.hrtime(); // registra tempo de inicio
+    client.Teste3({valorRequestString: parametros[numTeste]}, function(err, response) {
+    if (err) {console.log(err)};
+    //console.log(response);
+    });
+    var tempoFim = process.hrtime(tempoInicio);
+    tempos[numTeste] = ((tempoFim[0]*1000) + (tempoFim[1]/1000000)); // converter o tempo para milisegundos
+  }
+
+// cálculo e exibicao das estatisticas
+  console.log("------- TESTE 3: argumento e retorno strings tamanho 1 -------");
+  console.log("Execucoes:", totalTestes);
+  console.log('Media:', media(tempos));
+  console.log('Desvio Padrao:', desvioPadrao(tempos));
+  console.log('Maxima:', Math.max.apply(null, tempos));
+  console.log('Minima:', Math.min.apply(null, tempos));
+}
+
+/**
  * Funcoes de apoio
 */
 
@@ -152,6 +190,17 @@ function media(data){
 
 function gerarAleatorio(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function stringAleatoria(tamanho)
+{
+    var letras = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz';
+    var aleatoria = '';
+    for (var i = 0; i < tamanho; i++) {
+        var rnum = Math.floor(Math.random() * letras.length);
+        aleatoria += letras.substring(rnum, rnum + 1);
+    }
+    return aleatoria;
 }
 
 main();

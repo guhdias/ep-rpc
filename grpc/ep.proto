@@ -12,6 +12,7 @@ service Teste {
   rpc Teste0 (RequestInt) returns (ReplyInt) {}
   rpc Teste1 (RequestInt) returns (ReplyInt) {}
   rpc Teste2 (RequestInt) returns (ReplyInt) {}
+  rpc Teste3 (RequestString) returns (ReplyString) {}
 }
 
 message RequestInt {
@@ -20,4 +21,12 @@ message RequestInt {
 
 message ReplyInt {
 	int32 valorReplyInt = 0;
+}
+
+message RequestString {
+	string valorRequestString = 0;
+}
+
+message ReplyString {
+	string valorReplyString = 0;
 }
