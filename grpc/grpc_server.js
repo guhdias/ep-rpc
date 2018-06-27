@@ -5,18 +5,26 @@ var ep_proto = grpc.load(PROTO_PATH).ep;
 
 // Implementacao do metodo
 function Teste0(call, callback) {
+  //console.log(call.request);
   callback(null, {valorReplyInt: 0});
 }
 
 function Teste1(call, callback) {
-  callback(null, {valorReplyInt: gerarAleatorio(1,10)});
+  //console.log(call.request);
+  var min =  -2147483647;
+  var max = 2147483647;
+  callback(null, {valorReplyInt: gerarAleatorio(min,max)});
 }
 
 function Teste2(call, callback) {
-  callback(null, {valorReplyInt: gerarAleatorio(2000000000,2147483647)});
+  //console.log(call.request);
+  var min =  -2147483647;
+  var max = 2147483647;
+  callback(null, {valorReplyInt0: gerarAleatorio(min,max), valorReplyInt1: gerarAleatorio(min,max), valorReplyInt2: gerarAleatorio(min,max), valorReplyInt3: gerarAleatorio(min,max), valorReplyInt4: gerarAleatorio(min,max), valorReplyInt5: gerarAleatorio(min,max), valorReplyInt6: gerarAleatorio(min,max), valorReplyInt7: gerarAleatorio(min,max)});
 }
 
 function Teste3(call, callback) {
+  //var retorno = parseInt(stringAleatoria(1,call.request.potencia));
   callback(null, {valorReplyString: stringAleatoria(1)});
 }
 

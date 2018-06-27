@@ -11,7 +11,7 @@ package ep;
 service Teste {
   rpc Teste0 (RequestInt) returns (ReplyInt) {}
   rpc Teste1 (RequestInt) returns (ReplyInt) {}
-  rpc Teste2 (RequestInt) returns (ReplyInt) {}
+  rpc Teste2 (RequestInt8) returns (ReplyInt8) {}
   rpc Teste3 (RequestString) returns (ReplyString) {}
 }
 
@@ -21,6 +21,28 @@ message RequestInt {
 
 message ReplyInt {
 	int32 valorReplyInt = 0;
+}
+
+message RequestInt8 {
+	int32 valorRequestInt0 = 0;
+	int32 valorRequestInt1 = 1;
+	int32 valorRequestInt2 = 2;
+	int32 valorRequestInt3 = 3;
+	int32 valorRequestInt4 = 4;
+	int32 valorRequestInt5 = 5;
+	int32 valorRequestInt6 = 6;
+	int32 valorRequestInt7 = 7;
+}
+
+message ReplyInt8 {
+	int32 valorReplyInt0 = 0;
+	int32 valorReplyInt1 = 1;
+	int32 valorReplyInt2 = 2;
+	int32 valorReplyInt3 = 3;
+	int32 valorReplyInt4 = 4;
+	int32 valorReplyInt5 = 5;
+	int32 valorReplyInt6 = 6;
+	int32 valorReplyInt7 = 7;
 }
 
 message RequestString {
