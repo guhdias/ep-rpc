@@ -13,6 +13,7 @@ service Teste {
   rpc Teste1 (RequestInt) returns (ReplyInt) {}
   rpc Teste2 (RequestInt8) returns (ReplyInt8) {}
   rpc Teste3 (RequestString) returns (ReplyString) {}
+  rpc Teste4 (Coordenadas) returns (Objeto) {}
 }
 
 message RequestInt {
@@ -53,4 +54,15 @@ message RequestString {
 message ReplyString {
 	string valorReplyString = 0;
 	int32 tamanho = 1;
+}
+
+message Coordenadas {
+	int32 x = 0;
+	int32 y = 1;
+	int32 z = 2;
+}
+
+message Objeto {
+	string nome = 0;
+	Coordenadas coordenadas = 1;
 }

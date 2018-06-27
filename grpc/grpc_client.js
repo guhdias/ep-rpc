@@ -17,7 +17,7 @@ function main() {
   for (var i = 0; i < 11; i++) {
     teste3(Math.pow(2,i), i);
   }
-
+  teste4();
 }
 
 
@@ -122,16 +122,10 @@ function teste2(){
 }
 
 /**
- * Teste 3 - argumento e retorno strings tamanho 1
+ * Teste 3.x - argumento e retorno strings tamanho n (de 1 a 1024)
 */
 
 function teste3(tamanho, teste){
-// criar o array de parametros aleatorios que serao enviados
-  var parametros = []
-   for (numTeste = 0; numTeste < totalTestes; numTeste++) {
-    parametros[numTeste] = stringAleatoria(tamanho);
-  }
-
 // primeira chamada nao eh considerada no teste pois o tempo eh um valor extremo em comparacao as demais
   client.Teste3({valorRequestString: stringAleatoria(tamanho), tamanho: tamanho}, function(err, response) {
     if (err) {console.log(err)};
@@ -151,6 +145,51 @@ function teste3(tamanho, teste){
 
 // cálculo e exibicao das estatisticas
   console.log("------- TESTE 3." + teste + ": 1 argumento e 1 retorno strings tamanhos " + tamanho + " -------");
+  console.log("Execucoes:", totalTestes);
+  console.log('Media:', media(tempos));
+  console.log('Desvio Padrao:', desvioPadrao(tempos));
+  console.log('Maxima:', Math.max.apply(null, tempos));
+  console.log('Minima:', Math.min.apply(null, tempos));
+}
+
+/**
+ * Teste 4 - argumento e retorno complexos (definidos pelo usuario)
+*/
+
+function teste4(){
+// parametros para geracao dos numeros aleatorios
+  var min =  -2147483647;
+  var max = 2147483647;
+
+// criacao do objeto coordenadas
+  var coordenadas = {
+    x: 0,
+    y: 0,
+    z: 0
+  };
+
+// primeira chamada nao eh considerada no teste pois o tempo eh um valor extremo em comparacao as demais
+  client.Teste4(coordenadas, function(err, response) {
+    if (err) {console.log(err)};
+  });
+
+// realizacao dos testes na quantidade de vezes determinada e armazenamento dos tempos no array
+
+  for (numTeste = 0; numTeste < totalTestes; numTeste++) {
+    var tempoInicio = process.hrtime(); // registra tempo de inicio
+    coordenadas.x = gerarAleatorio(min,max);
+    coordenadas.y = gerarAleatorio(min,max);
+    coordenadas.z = gerarAleatorio(min,max);
+    client.Teste4(coordenadas, function(err, response) {
+    if (err) {console.log(err)};
+    //console.log(response);
+    });
+    var tempoFim = process.hrtime(tempoInicio);
+    tempos[numTeste] = ((tempoFim[0]*1000) + (tempoFim[1]/1000000)); // converter o tempo para milisegundos
+  }
+
+// cálculo e exibicao das estatisticas
+  console.log("------- TESTE 4: argumento e retorno complexos -------");
   console.log("Execucoes:", totalTestes);
   console.log('Media:', media(tempos));
   console.log('Desvio Padrao:', desvioPadrao(tempos));

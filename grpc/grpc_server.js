@@ -28,12 +28,21 @@ function Teste3(call, callback) {
   callback(null, {valorReplyString: stringAleatoria(call.request.tamanho), tamanho: call.request.tamanho});
 }
 
+function Teste4(call, callback) {
+  //console.log(call.request);
+  var objeto = {
+    nome: stringAleatoria(64),
+    coordenadas: call.request
+  };
+  callback(null, objeto);
+}
+
 /**
  * Inicia o servidor RPC que recebe as requisicoes para o servico Teste na porta selecionada
 */
 function main() {
   var server = new grpc.Server();
-  server.addService(ep_proto.Teste.service, {Teste0: Teste0, Teste1: Teste1, Teste2: Teste2, Teste3: Teste3});
+  server.addService(ep_proto.Teste.service, {Teste0: Teste0, Teste1: Teste1, Teste2: Teste2, Teste3: Teste3, Teste4: Teste4});
   server.bind('0.0.0.0:50051', grpc.ServerCredentials.createInsecure());
   server.start();
 }
