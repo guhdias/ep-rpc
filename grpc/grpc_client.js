@@ -11,10 +11,12 @@ var tempos = [];
 
 function main() {
 
-  //teste0();
-  //teste1();
-  //teste2();
-  teste3();
+  teste0();
+  teste1();
+  teste2();
+  for (var i = 0; i < 11; i++) {
+    teste3(Math.pow(2,i), i);
+  }
 
 }
 
@@ -123,15 +125,15 @@ function teste2(){
  * Teste 3 - argumento e retorno strings tamanho 1
 */
 
-function teste3(){
+function teste3(tamanho, teste){
 // criar o array de parametros aleatorios que serao enviados
   var parametros = []
    for (numTeste = 0; numTeste < totalTestes; numTeste++) {
-    parametros[numTeste] = stringAleatoria(1);
+    parametros[numTeste] = stringAleatoria(tamanho);
   }
 
 // primeira chamada nao eh considerada no teste pois o tempo eh um valor extremo em comparacao as demais
-  client.Teste3({valorRequestString: parametros[0]}, function(err, response) {
+  client.Teste3({valorRequestString: stringAleatoria(tamanho), tamanho: tamanho}, function(err, response) {
     if (err) {console.log(err)};
   });
 
@@ -139,7 +141,7 @@ function teste3(){
 
   for (numTeste = 0; numTeste < totalTestes; numTeste++) {
     var tempoInicio = process.hrtime(); // registra tempo de inicio
-    client.Teste3({valorRequestString: parametros[numTeste]}, function(err, response) {
+    client.Teste3({valorRequestString: stringAleatoria(tamanho), tamanho: tamanho}, function(err, response) {
     if (err) {console.log(err)};
     //console.log(response);
     });
@@ -148,7 +150,7 @@ function teste3(){
   }
 
 // cálculo e exibicao das estatisticas
-  console.log("------- TESTE 3: argumento e retorno strings tamanho 1 -------");
+  console.log("------- TESTE 3." + teste + ": 1 argumento e 1 retorno strings tamanhos " + tamanho + " -------");
   console.log("Execucoes:", totalTestes);
   console.log('Media:', media(tempos));
   console.log('Desvio Padrao:', desvioPadrao(tempos));

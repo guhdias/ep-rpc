@@ -47,8 +47,10 @@ message ReplyInt8 {
 
 message RequestString {
 	string valorRequestString = 0;
+	int32 tamanho = 1;
 }
 
 message ReplyString {
 	string valorReplyString = 0;
+	int32 tamanho = 1;
 }

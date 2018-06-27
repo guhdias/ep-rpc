@@ -24,8 +24,8 @@ function Teste2(call, callback) {
 }
 
 function Teste3(call, callback) {
-  //var retorno = parseInt(stringAleatoria(1,call.request.potencia));
-  callback(null, {valorReplyString: stringAleatoria(1)});
+  //console.log(call.request);
+  callback(null, {valorReplyString: stringAleatoria(call.request.tamanho), tamanho: call.request.tamanho});
 }
 
 /**
