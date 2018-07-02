@@ -9,11 +9,11 @@ package ep;
 
 // Definicao do servico.
 service Teste {
-  rpc Teste0 (RequestInt) returns (ReplyInt) {}
   rpc Teste1 (RequestInt) returns (ReplyInt) {}
-  rpc Teste2 (RequestInt8) returns (ReplyInt8) {}
-  rpc Teste3 (RequestString) returns (ReplyString) {}
-  rpc Teste4 (Coordenadas) returns (Objeto) {}
+  rpc Teste2 (RequestInt) returns (ReplyInt) {}
+  rpc Teste3 (RequestInt8) returns (ReplyInt8) {}
+  rpc Teste4 (RequestString) returns (ReplyString) {}
+  rpc Teste5 (Coordenadas) returns (Objeto) {}
 }
 
 message RequestInt {
