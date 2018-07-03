@@ -11,13 +11,6 @@ var eurecaClient = new Eureca.Client({uri:'ws://localhost:8080/'});
 
 //-------------------------------------------------------
 //Metodos exportados para serem chamados no server.js
-eurecaClient.exports.clientEcho = function (msg){
-	console.log(msg);
-}
-eurecaClient.exports.teste = function (quadrado){
-	var resultado = quadrado * quadrado;
-	console.log(resultado);
-}
 
 eurecaClient.ready(function(serverProxy){	//Função que chama uma função exportada pelo servidor, assim que o client carregar
 											//Equivalente a utilização do main no grpc
@@ -29,7 +22,7 @@ eurecaClient.ready(function(serverProxy){	//Função que chama uma função expo
 		teste4(Math.pow(2,i), i, serverProxy);
 	}
 	teste5(serverProxy);
-
+	//eurecaClient.disconnect(); //Disconnect, se remover do comentario finaliza o client após execução, porém prints de retorno não aparecem.
 });
 
 /**
@@ -37,21 +30,21 @@ eurecaClient.ready(function(serverProxy){	//Função que chama uma função expo
 */
 function teste1(serverProxy) {
 // primeira chamada nao eh considerada no teste pois o tempo eh um valor extremo em comparacao as demais
-  serverProxy.Teste1({valorRequestInt: 0}, function(err, response) {
-    if (err) {console.log(err)};
-  });
+  serverProxy.Teste1({valorRequestInt: 0});
 
 // realizacao dos testes na quantidade de vezes determinada e armazenamento dos tempos no array
 
   for (numTeste = 0; numTeste < totalTestes; numTeste++) {
     var tempoInicio = process.hrtime(); // registra tempo de inicio
-    serverProxy.Teste1({valorRequestInt: 0}, function(err, response) {
-    if (err) {console.log(err)};
-    console.log(response);
-    });
-    var tempoFim = process.hrtime(tempoInicio);
+	    serverProxy.Teste1({valorRequestInt: 0})
+		.then(function(r) {
+			console.log(r);
+		});
+	//serverProxy.Teste1({valorRequestInt: 0}).then(function(r){console.log(r);});
+	var tempoFim = process.hrtime(tempoInicio);
     tempos[numTeste] = ((tempoFim[0]*1000) + (tempoFim[1]/1000000)); // converter o tempo para milisegundos
   }
+
 
 // cálculo e exibicao das estatisticas
   console.log("------- TESTE 1: 1 argumento e 1 retorno inteiros iguais a 0 -------");
@@ -60,6 +53,7 @@ function teste1(serverProxy) {
   console.log('Desvio Padrao:', desvioPadrao(tempos));
   console.log('Maxima:', Math.max.apply(null, tempos));
   console.log('Minima:', Math.min.apply(null, tempos));
+  console.log('Tempos:', tempos);
 }
 
 /**
@@ -72,18 +66,17 @@ function teste2(serverProxy){
   var max = 2147483647;
 
 // primeira chamada nao eh considerada no teste pois o tempo eh um valor extremo em comparacao as demais
-  serverProxy.Teste2({valorRequestInt: gerarAleatorio(min,max)}, function(err, response) {
-    if (err) {console.log(err)};
-  });
+  serverProxy.Teste2({valorRequestInt: gerarAleatorio(min,max)});
 
 // realizacao dos testes na quantidade de vezes determinada e armazenamento dos tempos no array
 
   for (numTeste = 0; numTeste < totalTestes; numTeste++) {
     var tempoInicio = process.hrtime(); // registra tempo de inicio
-    serverProxy.Teste2({valorRequestInt: gerarAleatorio(min,max)}, function(err, response) {
-    if (err) {console.log(err)};
-    //console.log(response);
-    });
+
+	serverProxy.Teste2({valorRequestInt: gerarAleatorio(min,max)})
+		.then(function(r) {
+			console.log(r);
+		});
     var tempoFim = process.hrtime(tempoInicio);
     tempos[numTeste] = ((tempoFim[0]*1000) + (tempoFim[1]/1000000)); // converter o tempo para milisegundos
   }
@@ -95,6 +88,8 @@ function teste2(serverProxy){
   console.log('Desvio Padrao:', desvioPadrao(tempos));
   console.log('Maxima:', Math.max.apply(null, tempos));
   console.log('Minima:', Math.min.apply(null, tempos));
+  console.log('Tempos:', tempos);
+  
 }
 
 /**
@@ -107,18 +102,17 @@ function teste3(serverProxy){
   var max = 2147483647;
 
 // primeira chamada nao eh considerada no teste pois o tempo eh um valor extremo em comparacao as demais
-  serverProxy.Teste3({valorRequestInt0: gerarAleatorio(min,max), valorRequestInt1: gerarAleatorio(min,max), valorRequestInt2: gerarAleatorio(min,max), valorRequestInt3: gerarAleatorio(min,max), valorRequestInt4: gerarAleatorio(min,max), valorRequestInt5: gerarAleatorio(min,max), valorRequestInt6: gerarAleatorio(min,max), valorRequestInt7: gerarAleatorio(min,max)}, function(err, response) {
-    if (err) {console.log(err)};
-  });
+  serverProxy.Teste3({valorRequestInt0: gerarAleatorio(min,max), valorRequestInt1: gerarAleatorio(min,max), valorRequestInt2: gerarAleatorio(min,max), valorRequestInt3: gerarAleatorio(min,max), valorRequestInt4: gerarAleatorio(min,max), valorRequestInt5: gerarAleatorio(min,max), valorRequestInt6: gerarAleatorio(min,max), valorRequestInt7: gerarAleatorio(min,max)});
 
+  
 // realizacao dos testes na quantidade de vezes determinada e armazenamento dos tempos no array
 
   for (numTeste = 0; numTeste < totalTestes; numTeste++) {
     var tempoInicio = process.hrtime(); // registra tempo de inicio
-    serverProxy.Teste3({valorRequestInt0: gerarAleatorio(min,max), valorRequestInt1: gerarAleatorio(min,max), valorRequestInt2: gerarAleatorio(min,max), valorRequestInt3: gerarAleatorio(min,max), valorRequestInt4: gerarAleatorio(min,max), valorRequestInt5: gerarAleatorio(min,max), valorRequestInt6: gerarAleatorio(min,max), valorRequestInt7: gerarAleatorio(min,max)}, function(err, response) {
-    if (err) {console.log(err)};
-    //console.log(response);
-    });
+	serverProxy.Teste3({valorRequestInt0: gerarAleatorio(min,max), valorRequestInt1: gerarAleatorio(min,max), valorRequestInt2: gerarAleatorio(min,max), valorRequestInt3: gerarAleatorio(min,max), valorRequestInt4: gerarAleatorio(min,max), valorRequestInt5: gerarAleatorio(min,max), valorRequestInt6: gerarAleatorio(min,max), valorRequestInt7: gerarAleatorio(min,max)})
+	.then(function(r) {
+			console.log(r);
+		});
     var tempoFim = process.hrtime(tempoInicio);
     tempos[numTeste] = ((tempoFim[0]*1000) + (tempoFim[1]/1000000)); // converter o tempo para milisegundos
   }
@@ -130,6 +124,7 @@ function teste3(serverProxy){
   console.log('Desvio Padrao:', desvioPadrao(tempos));
   console.log('Maxima:', Math.max.apply(null, tempos));
   console.log('Minima:', Math.min.apply(null, tempos));
+  console.log('Tempos:', tempos);  
 }
 
 /**
@@ -140,18 +135,16 @@ function teste4(tamanho, teste, serverProxy){
 // primeira chamada nao eh considerada no teste pois o tempo eh um valor extremo em comparacao as demais
 //console.log("Tamanho: " + tamanho + ", Teste: " + teste + ", serverProxy: " + serverProxy);
 //console.log("valorRequestString: " + stringAleatoria(tamanho) + " , tamanho: " + tamanho);
-  serverProxy.Teste4({valorRequestString: stringAleatoria(tamanho), tamanho: tamanho}, function(err, response) {
-    if (err) {console.log(err)};
-  });
+  serverProxy.Teste4({valorRequestString: stringAleatoria(tamanho), tamanho: tamanho});
 
 // realizacao dos testes na quantidade de vezes determinada e armazenamento dos tempos no array
 
   for (numTeste = 0; numTeste < totalTestes; numTeste++) {
     var tempoInicio = process.hrtime(); // registra tempo de inicio
-    serverProxy.Teste4({valorRequestString: stringAleatoria(tamanho), tamanho: tamanho}, function(err, response) {
-    if (err) {console.log(err)};
-    console.log(response);
-    });
+    serverProxy.Teste4({valorRequestString: stringAleatoria(tamanho), tamanho: tamanho})
+		.then(function(r) {
+			console.log(r);
+		});
     var tempoFim = process.hrtime(tempoInicio);
     tempos[numTeste] = ((tempoFim[0]*1000) + (tempoFim[1]/1000000)); // converter o tempo para milisegundos
   }
@@ -163,6 +156,7 @@ function teste4(tamanho, teste, serverProxy){
   console.log('Desvio Padrao:', desvioPadrao(tempos));
   console.log('Maxima:', Math.max.apply(null, tempos));
   console.log('Minima:', Math.min.apply(null, tempos));
+  console.log('Tempos:', tempos);  
 }
 
 /**
@@ -182,9 +176,7 @@ function teste5(serverProxy){
   };
 
 // primeira chamada nao eh considerada no teste pois o tempo eh um valor extremo em comparacao as demais
-  serverProxy.Teste5(coordenadas, function(err, response) {
-    if (err) {console.log(err)};
-  });
+  serverProxy.Teste5(coordenadas);
 
 // realizacao dos testes na quantidade de vezes determinada e armazenamento dos tempos no array
 
@@ -193,10 +185,10 @@ function teste5(serverProxy){
     coordenadas.x = gerarAleatorio(min,max);
     coordenadas.y = gerarAleatorio(min,max);
     coordenadas.z = gerarAleatorio(min,max);
-    serverProxy.Teste5(coordenadas, function(err, response) {
-    if (err) {console.log(err)};
-    //console.log(response);
-    });
+    serverProxy.Teste5(coordenadas)
+	.then(function(r) {
+			console.log(r);
+		});
     var tempoFim = process.hrtime(tempoInicio);
     tempos[numTeste] = ((tempoFim[0]*1000) + (tempoFim[1]/1000000)); // converter o tempo para milisegundos
   }
@@ -208,6 +200,7 @@ function teste5(serverProxy){
   console.log('Desvio Padrao:', desvioPadrao(tempos));
   console.log('Maxima:', Math.max.apply(null, tempos));
   console.log('Minima:', Math.min.apply(null, tempos));
+  console.log('Tempos:', tempos);  
 }
 
 //-------------------------------------------------------
