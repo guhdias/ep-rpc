@@ -48,7 +48,7 @@ function main() {
   server.addService(ep_proto.Teste.service, {Teste1: Teste1, Teste2: Teste2, Teste3: Teste3, Teste4: Teste4, Teste5: Teste5});
   server.bind('0.0.0.0:50051', grpc.ServerCredentials.createInsecure());
   server.start();
-  console.log("Servidor em execucao. Para interromper utilize Ctrl+C.");
+  console.log('\033[96m'+'Servidor em execucao. Para interromper utilize Ctrl+C. '+'\033[39m');
 }
 
 /**
