@@ -38,7 +38,7 @@ function teste1(serverProxy) {
     var tempoInicio = process.hrtime(); // registra tempo de inicio
 	    serverProxy.Teste1({valorRequestInt: 0})
 		.then(function(r) {
-			console.log(r);
+			//console.log(r);
 		});
 	//serverProxy.Teste1({valorRequestInt: 0}).then(function(r){console.log(r);});
 	var tempoFim = process.hrtime(tempoInicio);
@@ -75,7 +75,7 @@ function teste2(serverProxy){
 
 	serverProxy.Teste2({valorRequestInt: gerarAleatorio(min,max)})
 		.then(function(r) {
-			console.log(r);
+			//console.log(r);
 		});
     var tempoFim = process.hrtime(tempoInicio);
     tempos[numTeste] = ((tempoFim[0]*1000) + (tempoFim[1]/1000000)); // converter o tempo para milisegundos
@@ -111,7 +111,7 @@ function teste3(serverProxy){
     var tempoInicio = process.hrtime(); // registra tempo de inicio
 	serverProxy.Teste3({valorRequestInt0: gerarAleatorio(min,max), valorRequestInt1: gerarAleatorio(min,max), valorRequestInt2: gerarAleatorio(min,max), valorRequestInt3: gerarAleatorio(min,max), valorRequestInt4: gerarAleatorio(min,max), valorRequestInt5: gerarAleatorio(min,max), valorRequestInt6: gerarAleatorio(min,max), valorRequestInt7: gerarAleatorio(min,max)})
 	.then(function(r) {
-			console.log(r);
+			//console.log(r);
 		});
     var tempoFim = process.hrtime(tempoInicio);
     tempos[numTeste] = ((tempoFim[0]*1000) + (tempoFim[1]/1000000)); // converter o tempo para milisegundos
@@ -143,7 +143,7 @@ function teste4(tamanho, teste, serverProxy){
     var tempoInicio = process.hrtime(); // registra tempo de inicio
     serverProxy.Teste4({valorRequestString: stringAleatoria(tamanho), tamanho: tamanho})
 		.then(function(r) {
-			console.log(r);
+			//console.log(r);
 		});
     var tempoFim = process.hrtime(tempoInicio);
     tempos[numTeste] = ((tempoFim[0]*1000) + (tempoFim[1]/1000000)); // converter o tempo para milisegundos
@@ -187,7 +187,7 @@ function teste5(serverProxy){
     coordenadas.z = gerarAleatorio(min,max);
     serverProxy.Teste5(coordenadas)
 	.then(function(r) {
-			console.log(r);
+			//console.log(r);
 		});
     var tempoFim = process.hrtime(tempoInicio);
     tempos[numTeste] = ((tempoFim[0]*1000) + (tempoFim[1]/1000000)); // converter o tempo para milisegundos

@@ -1,0 +1,90 @@
+------- TESTE 1: 1 argumento e 1 retorno inteiros iguais a 0 -------
+Execucoes: 10
+Media: 0.1818236
+Desvio Padrao: 0.17226276763433243
+Maxima: 0.688391
+Minima: 0.100635
+------- TESTE 2: 1 argumento e 1 retorno inteiros aleatorios -------
+Execucoes: 10
+Media: 0.19260729999999998
+Desvio Padrao: 0.06066785939037242
+Maxima: 0.291805
+Minima: 0.116412
+------- TESTE 3: 8 argumentos e 8 retornos inteiros aleatorios -------
+Execucoes: 10
+Media: 0.1980472
+Desvio Padrao: 0.04929613977949998
+Maxima: 0.317369
+Minima: 0.151629
+------- TESTE 4.0: 1 argumento e 1 retorno strings tamanhos 1 -------
+Execucoes: 10
+Media: 0.2698143
+Desvio Padrao: 0.21819496368892202
+Maxima: 0.895551
+Minima: 0.124798
+------- TESTE 4.1: 1 argumento e 1 retorno strings tamanhos 2 -------
+Execucoes: 10
+Media: 0.1735879
+Desvio Padrao: 0.08497428335378887
+Maxima: 0.420478
+Minima: 0.131092
+------- TESTE 4.2: 1 argumento e 1 retorno strings tamanhos 4 -------
+Execucoes: 10
+Media: 0.2667385
+Desvio Padrao: 0.059804841672309435
+Maxima: 0.327211
+Minima: 0.140411
+------- TESTE 4.3: 1 argumento e 1 retorno strings tamanhos 8 -------
+Execucoes: 10
+Media: 0.20527920000000002
+Desvio Padrao: 0.06545808113716747
+Maxima: 0.339849
+Minima: 0.130169
+------- TESTE 4.4: 1 argumento e 1 retorno strings tamanhos 16 -------
+Execucoes: 10
+Media: 0.42045070000000007
+Desvio Padrao: 0.7563782708066183
+Maxima: 2.680676
+Minima: 0.132903
+------- TESTE 4.5: 1 argumento e 1 retorno strings tamanhos 32 -------
+Execucoes: 10
+Media: 0.15014109999999997
+Desvio Padrao: 0.02455089614433656
+Maxima: 0.197931
+Minima: 0.127834
+------- TESTE 4.6: 1 argumento e 1 retorno strings tamanhos 64 -------
+Execucoes: 10
+Media: 0.41060569999999996
+Desvio Padrao: 0.17833514740513157
+Maxima: 0.888655
+Minima: 0.264886
+------- TESTE 4.7: 1 argumento e 1 retorno strings tamanhos 128 -------
+Execucoes: 10
+Media: 0.18056139999999998
+Desvio Padrao: 0.05024355166426832
+Maxima: 0.275246
+Minima: 0.142539
+------- TESTE 4.8: 1 argumento e 1 retorno strings tamanhos 256 -------
+Execucoes: 10
+Media: 0.30021829999999994
+Desvio Padrao: 0.20082033149312845
+Maxima: 0.836611
+Minima: 0.170711
+------- TESTE 4.9: 1 argumento e 1 retorno strings tamanhos 512 -------
+Execucoes: 10
+Media: 0.2210795
+Desvio Padrao: 0.08297207880154625
+Maxima: 0.399145
+Minima: 0.162468
+------- TESTE 4.10: 1 argumento e 1 retorno strings tamanhos 1024 -------
+Execucoes: 10
+Media: 0.7095360000000001
+Desvio Padrao: 0.2902445572716222
+Maxima: 1.300374
+Minima: 0.289344
+------- TESTE 5: argumento e retorno complexos -------
+Execucoes: 10
+Media: 0.1565119
+Desvio Padrao: 0.033069427193255105
+Maxima: 0.249899
+Minima: 0.130038

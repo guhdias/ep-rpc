@@ -1,0 +1,532 @@
+eureca.io v0.8.1
+ws://172.16.101.137:8080/ eureca.io
+------- TESTE 1: 1 argumento e 1 retorno inteiros iguais a 0 -------
+Execucoes: 10
+Media: 0.0879833
+Desvio Padrao: 0.12223758096759771
+Maxima: 0.420586
+Minima: 0.015968
+Tempos: [ 0.179987,
+  0.041859,
+  0.023899,
+  0.019823,
+  0.420586,
+  0.114721,
+  0.028566,
+  0.018278,
+  0.015968,
+  0.016146 ]
+------- TESTE 2: 1 argumento e 1 retorno inteiros aleatorios -------
+Execucoes: 10
+Media: 0.039043900000000006
+Desvio Padrao: 0.03000217713916775
+Maxima: 0.099357
+Minima: 0.01427
+Tempos: [ 0.042357,
+  0.032617,
+  0.018274,
+  0.018489,
+  0.099357,
+  0.092802,
+  0.037397,
+  0.020391,
+  0.014485,
+  0.01427 ]
+------- TESTE 3: 8 argumentos e 8 retornos inteiros aleatorios -------
+Execucoes: 10
+Media: 0.49546969999999996
+Desvio Padrao: 1.4067785577598948
+Maxima: 4.715508
+Minima: 0.015548
+Tempos: [ 0.035762,
+  0.073187,
+  0.022197,
+  0.025571,
+  0.015948,
+  0.017726,
+  0.01602,
+  0.015548,
+  0.01723,
+  4.715508 ]
+------- TESTE 4.0: 1 argumento e 1 retorno strings tamanhos 1 -------
+Execucoes: 10
+Media: 0.0301033
+Desvio Padrao: 0.015660053282476407
+Maxima: 0.0673
+Minima: 0.012916
+Tempos: [ 0.041377,
+  0.029511,
+  0.017106,
+  0.012916,
+  0.044407,
+  0.0673,
+  0.022813,
+  0.021073,
+  0.019542,
+  0.024988 ]
+------- TESTE 4.1: 1 argumento e 1 retorno strings tamanhos 2 -------
+Execucoes: 10
+Media: 0.4834067
+Desvio Padrao: 1.3158347742331518
+Maxima: 4.426534
+Minima: 0.011431
+Tempos: [ 0.226633,
+  0.027319,
+  0.02186,
+  0.053172,
+  4.426534,
+  0.027377,
+  0.015566,
+  0.01204,
+  0.012135,
+  0.011431 ]
+------- TESTE 4.2: 1 argumento e 1 retorno strings tamanhos 4 -------
+Execucoes: 10
+Media: 0.016354799999999996
+Desvio Padrao: 0.00795638954300253
+Maxima: 0.037391
+Minima: 0.010952
+Tempos: [ 0.037391,
+  0.022594,
+  0.014662,
+  0.012823,
+  0.01141,
+  0.019451,
+  0.011328,
+  0.011516,
+  0.010952,
+  0.011421 ]
+------- TESTE 4.3: 1 argumento e 1 retorno strings tamanhos 8 -------
+Execucoes: 10
+Media: 0.015346900000000002
+Desvio Padrao: 0.006048553173280366
+Maxima: 0.032843
+Minima: 0.01176
+Tempos: [ 0.032843,
+  0.017663,
+  0.013121,
+  0.012439,
+  0.013818,
+  0.012277,
+  0.01176,
+  0.012471,
+  0.012666,
+  0.014411 ]
+------- TESTE 4.4: 1 argumento e 1 retorno strings tamanhos 16 -------
+Execucoes: 10
+Media: 0.0158644
+Desvio Padrao: 0.002465284494738893
+Maxima: 0.021365
+Minima: 0.013374
+Tempos: [ 0.018803,
+  0.015575,
+  0.014771,
+  0.015501,
+  0.014352,
+  0.013462,
+  0.013964,
+  0.017477,
+  0.013374,
+  0.021365 ]
+------- TESTE 4.5: 1 argumento e 1 retorno strings tamanhos 32 -------
+Execucoes: 10
+Media: 0.0168459
+Desvio Padrao: 0.0016516620386749822
+Maxima: 0.021116
+Minima: 0.015531
+Tempos: [ 0.021116,
+  0.017894,
+  0.017958,
+  0.016592,
+  0.016129,
+  0.01606,
+  0.015596,
+  0.015797,
+  0.015786,
+  0.015531 ]
+------- TESTE 4.6: 1 argumento e 1 retorno strings tamanhos 64 -------
+Execucoes: 10
+Media: 0.0212122
+Desvio Padrao: 0.0016716999611174248
+Maxima: 0.025465
+Minima: 0.019842
+Tempos: [ 0.025465,
+  0.021859,
+  0.022489,
+  0.021565,
+  0.020745,
+  0.020281,
+  0.019927,
+  0.020038,
+  0.019842,
+  0.019911 ]
+------- TESTE 4.7: 1 argumento e 1 retorno strings tamanhos 128 -------
+Execucoes: 10
+Media: 0.0305336
+Desvio Padrao: 0.0023444239463032285
+Maxima: 0.036297
+Minima: 0.028673
+Tempos: [ 0.033631,
+  0.036297,
+  0.030554,
+  0.029529,
+  0.029538,
+  0.02966,
+  0.029156,
+  0.028673,
+  0.029461,
+  0.028837 ]
+------- TESTE 4.8: 1 argumento e 1 retorno strings tamanhos 256 -------
+Execucoes: 10
+Media: 0.07536230000000001
+Desvio Padrao: 0.07648169818727878
+Maxima: 0.304723
+Minima: 0.047187
+Tempos: [ 0.052775,
+  0.052846,
+  0.05128,
+  0.047368,
+  0.047732,
+  0.047985,
+  0.047187,
+  0.050561,
+  0.304723,
+  0.051166 ]
+------- TESTE 4.9: 1 argumento e 1 retorno strings tamanhos 512 -------
+Execucoes: 10
+Media: 0.7371162000000001
+Desvio Padrao: 1.5512740535401732
+Maxima: 5.360112
+Minima: 0.085217
+Tempos: [ 0.119915,
+  0.08926,
+  0.085217,
+  5.360112,
+  0.390738,
+  0.219799,
+  0.097849,
+  0.096463,
+  0.68167,
+  0.230139 ]
+------- TESTE 4.10: 1 argumento e 1 retorno strings tamanhos 1024 -------
+Execucoes: 10
+Media: 0.17207640000000002
+Desvio Padrao: 0.17453031741173222
+Maxima: 0.667481
+Minima: 0.079754
+Tempos: [ 0.091063,
+  0.095322,
+  0.079754,
+  0.157427,
+  0.088647,
+  0.096237,
+  0.081721,
+  0.089539,
+  0.667481,
+  0.273573 ]
+------- TESTE 5: argumento e retorno complexos -------
+Execucoes: 10
+Media: 0.019673000000000003
+Desvio Padrao: 0.005478690591738138
+Maxima: 0.030933
+Minima: 0.015201
+Tempos: [ 0.030933,
+  0.029688,
+  0.019921,
+  0.018325,
+  0.016627,
+  0.016219,
+  0.016529,
+  0.017578,
+  0.015709,
+  0.015201 ]
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+600488968
+-572076503
+1724552083
+2134023003
+-295657110
+2014753134
+-847374202
+1676190956
+2093292719
+100644567
+{ valorReplyInt0: 105436056,
+  valorReplyInt1: 873035612,
+  valorReplyInt2: 262209223,
+  valorReplyInt3: -153911088,
+  valorReplyInt4: -1525367942,
+  valorReplyInt5: -395346574,
+  valorReplyInt6: -762561622,
+  valorReplyInt7: -494360295 }
+{ valorReplyInt0: -1383872687,
+  valorReplyInt1: 973610467,
+  valorReplyInt2: 2041862938,
+  valorReplyInt3: -1365728725,
+  valorReplyInt4: -559468940,
+  valorReplyInt5: -1145212437,
+  valorReplyInt6: 2028075706,
+  valorReplyInt7: 1857171865 }
+{ valorReplyInt0: -110908681,
+  valorReplyInt1: 297786250,
+  valorReplyInt2: 831310602,
+  valorReplyInt3: -1008576832,
+  valorReplyInt4: -1473289251,
+  valorReplyInt5: -600231693,
+  valorReplyInt6: -88599192,
+  valorReplyInt7: -1468084768 }
+{ valorReplyInt0: -1840096593,
+  valorReplyInt1: 1644254707,
+  valorReplyInt2: -496468247,
+  valorReplyInt3: -1982849260,
+  valorReplyInt4: 291953701,
+  valorReplyInt5: -1344027081,
+  valorReplyInt6: -202396381,
+  valorReplyInt7: -781029469 }
+{ valorReplyInt0: -486747897,
+  valorReplyInt1: -2138701284,
+  valorReplyInt2: 1481353094,
+  valorReplyInt3: -1071316540,
+  valorReplyInt4: 1264658224,
+  valorReplyInt5: -1353408053,
+  valorReplyInt6: 821769886,
+  valorReplyInt7: -691839097 }
+{ valorReplyInt0: 1233398463,
+  valorReplyInt1: -228284412,
+  valorReplyInt2: 134085693,
+  valorReplyInt3: 179688017,
+  valorReplyInt4: -1775848901,
+  valorReplyInt5: 1015128551,
+  valorReplyInt6: 2109724074,
+  valorReplyInt7: -739487711 }
+{ valorReplyInt0: -163045444,
+  valorReplyInt1: 290084685,
+  valorReplyInt2: 359330576,
+  valorReplyInt3: -37725933,
+  valorReplyInt4: 1626077747,
+  valorReplyInt5: -27053485,
+  valorReplyInt6: -1026505540,
+  valorReplyInt7: 425220690 }
+{ valorReplyInt0: -615642625,
+  valorReplyInt1: -278540209,
+  valorReplyInt2: 364548858,
+  valorReplyInt3: 1577026638,
+  valorReplyInt4: 1249837826,
+  valorReplyInt5: 28882709,
+  valorReplyInt6: -1718975700,
+  valorReplyInt7: 553692557 }
+{ valorReplyInt0: -2062738801,
+  valorReplyInt1: -1459404678,
+  valorReplyInt2: 1002471729,
+  valorReplyInt3: -762473605,
+  valorReplyInt4: 1120008348,
+  valorReplyInt5: 1296257217,
+  valorReplyInt6: -420284738,
+  valorReplyInt7: -1563613876 }
+{ valorReplyInt0: 824335381,
+  valorReplyInt1: -582665827,
+  valorReplyInt2: -2038531129,
+  valorReplyInt3: 1104350121,
+  valorReplyInt4: -527815257,
+  valorReplyInt5: -1109353674,
+  valorReplyInt6: -1296008361,
+  valorReplyInt7: -2008397616 }
+{ valorReplyString: 'E', tamanho: 1 }
+{ valorReplyString: 'S', tamanho: 1 }
+{ valorReplyString: 'z', tamanho: 1 }
+{ valorReplyString: '1', tamanho: 1 }
+{ valorReplyString: 'V', tamanho: 1 }
+{ valorReplyString: '4', tamanho: 1 }
+{ valorReplyString: 'D', tamanho: 1 }
+{ valorReplyString: 'h', tamanho: 1 }
+{ valorReplyString: 'p', tamanho: 1 }
+{ valorReplyString: '8', tamanho: 1 }
+{ valorReplyString: 'QP', tamanho: 2 }
+{ valorReplyString: 'g6', tamanho: 2 }
+{ valorReplyString: '7U', tamanho: 2 }
+{ valorReplyString: 'po', tamanho: 2 }
+{ valorReplyString: 'TS', tamanho: 2 }
+{ valorReplyString: 'hW', tamanho: 2 }
+{ valorReplyString: 'vV', tamanho: 2 }
+{ valorReplyString: 'mr', tamanho: 2 }
+{ valorReplyString: 'e9', tamanho: 2 }
+{ valorReplyString: 'lz', tamanho: 2 }
+{ valorReplyString: 'u3hR', tamanho: 4 }
+{ valorReplyString: 'hK5m', tamanho: 4 }
+{ valorReplyString: 'r3Uw', tamanho: 4 }
+{ valorReplyString: 'T2D7', tamanho: 4 }
+{ valorReplyString: 'TqEv', tamanho: 4 }
+{ valorReplyString: 'BxiZ', tamanho: 4 }
+{ valorReplyString: 'Zp1h', tamanho: 4 }
+{ valorReplyString: 'umkv', tamanho: 4 }
+{ valorReplyString: '3AJN', tamanho: 4 }
+{ valorReplyString: 'TW46', tamanho: 4 }
+{ valorReplyString: 'rX6f9Vlc', tamanho: 8 }
+{ valorReplyString: 'kTgRqluv', tamanho: 8 }
+{ valorReplyString: '90MaP0eO', tamanho: 8 }
+{ valorReplyString: 'H7f5b3fP', tamanho: 8 }
+{ valorReplyString: 'LpAX5dun', tamanho: 8 }
+{ valorReplyString: 'u7qrTeuM', tamanho: 8 }
+{ valorReplyString: '6CQl5WFQ', tamanho: 8 }
+{ valorReplyString: 'wExrFI5B', tamanho: 8 }
+{ valorReplyString: '0UUDGtv0', tamanho: 8 }
+{ valorReplyString: 'SNetsTgJ', tamanho: 8 }
+{ valorReplyString: 'ZAMIk5LTFDD8NCUL', tamanho: 16 }
+{ valorReplyString: 'Ux0nPncAvTIHDRHE', tamanho: 16 }
+{ valorReplyString: 'MM178RWlvTp0UreJ', tamanho: 16 }
+{ valorReplyString: 'CP8kCUyvb1gCUAKZ', tamanho: 16 }
+{ valorReplyString: 'y9AqIx3gLgykPxPU', tamanho: 16 }
+{ valorReplyString: 'HvLOczoZxxNmvObk', tamanho: 16 }
+{ valorReplyString: 'U7eWmbZ1r6Iu4Wtc', tamanho: 16 }
+{ valorReplyString: 'NEH9ynxfXGBB0ihV', tamanho: 16 }
+{ valorReplyString: 'rUDr9Ty4C5UfDFIl', tamanho: 16 }
+{ valorReplyString: 'lFH5dTWi33szFz4C', tamanho: 16 }
+{ valorReplyString: 'L6TePurs2OW56A8G7GXGD4ITeDsEz33O',
+  tamanho: 32 }
+{ valorReplyString: 'E9Tw8DIUX6Ih5CgcpTD4OJiZoTOS7lJ6',
+  tamanho: 32 }
+{ valorReplyString: 'Mf5s66ea9cocxq7D442nbinq5gy0wJ63',
+  tamanho: 32 }
+{ valorReplyString: 'hJ7NSBkeBthTlSXvWNSRoVx6xfuLp3iL',
+  tamanho: 32 }
+{ valorReplyString: 'k42r7sRHnEMUrUsfF8rMvQ4CZUqXohJf',
+  tamanho: 32 }
+{ valorReplyString: 'T8DhVAyFnd3mxiVygegNMmCWV1IE66ug',
+  tamanho: 32 }
+{ valorReplyString: 'NeKwvoSDh0geqVaWMEeQIsTrUNPGGfWF',
+  tamanho: 32 }
+{ valorReplyString: 'B8hg2MyTJXtwTwpUTKySbPfCHq3pUvC5',
+  tamanho: 32 }
+{ valorReplyString: 'wvEm6aCNiqhbZkQMqLgpfzQoDeillRGw',
+  tamanho: 32 }
+{ valorReplyString: 'OV5xnLooTR01Jv2Kp2awuzmE5NCOenuq',
+  tamanho: 32 }
+{ valorReplyString: 'Zv3vyM8H4mfKJkPWaxN1JsCVqdFQrulUi32F5hsafwPwCSZ17L6E8hLoIziW52U2',
+  tamanho: 64 }
+{ valorReplyString: 'Qi8IMdNmC9Zt1UolNwCRA6uTiyCONM8HdEy1brAAJ913iJ9mxcT9J07KwToMiGiN',
+  tamanho: 64 }
+{ valorReplyString: '829no0WMa0Qheg50A4q83s4SI26CVssCnxcgo0iPMWkNvrw2CTrSBxy4lzJhT9f5',
+  tamanho: 64 }
+{ valorReplyString: 'f0dyTCBHVBstwIFehoJKpKnO9IH0TfBGefR4Op8kFatofKV1cBhWmL2LRyOB928g',
+  tamanho: 64 }
+{ valorReplyString: 'yz6LIkklmoc4K70LAi9dvdtz20Tq7feNHPIc3MhpKmUmt5DkW3TiSnoEyM2EcCEi',
+  tamanho: 64 }
+{ valorReplyString: 'gTbTl7lOWc0fWumEHTALsA1kwRhRu9DBTSJEWMoV3T7yrwTl3uQ6KA342HrawSV7',
+  tamanho: 64 }
+{ valorReplyString: 'hCS9kT1S826zt4o5DpBnqwxwokvh11ateQOTegOIaDu6gzGQtvdKSPTvD5OMMmwQ',
+  tamanho: 64 }
+{ valorReplyString: 'Tik1iqVi5q41IG8lwoRaHEDfzhCPzZyth1ngaqFlPM1clIuseRq9S5PblSpbS8cn',
+  tamanho: 64 }
+{ valorReplyString: 'M6PhoTKq76tLQI5fMOFg7JpILFL0weogfZ3107JeL17Tz761WoWocw2w1fVhIqrB',
+  tamanho: 64 }
+{ valorReplyString: 'cU4mTkis5KqUnTkCHQnhyiZnpeSP2BRX68QKL9GxLoVG5Pa2hhpgn791bq6GEN98',
+  tamanho: 64 }
+{ valorReplyString: 'E7LTHXAWaef5xsm9nEEc6wsMW5PTL3MPA8UHzvpkoUagpyuvzzbxmFn4A3nRxXEyBXZx7UwEhPIioCdIIplnr86Q0zF14k9DvnhbxdWNfZRghxBHa5MfbiDT87ETLiEZ',
+  tamanho: 128 }
+{ valorReplyString: '9M9b82ZxwW3Xz13Iz0QfBubILtZPcUf7tFgKS4LrRUTJQTW1CILn53EmmZMnZacREBP7ysuf5NVMAneUxerc8mToQlAIWTQ34btD7AgOqoJIaCrUlZm59n5OeVp6AWmJ',
+  tamanho: 128 }
+{ valorReplyString: 'GEpFzTIcZt9XdViMKlQD05DvgAegWbtDrh0qEHcFEbOAFhHrmw170IZ8XmEpQfK7nCS44ZmRnt3akWADWAybiODdnQupP5X3kqtFtraagRxtHwWUis0cpgxEkqntO6nk',
+  tamanho: 128 }
+{ valorReplyString: 'GE74uyvP8DIfE4E76OTivxLgL6f0m8O9sCxJfVWTvEXBkEIcTvqd64u7E4m7eGPuMiru4JBZguel051hg81Vr8oruJwH9L9HBQZ1oork4b550sXLuxn7HyNxZXHbrXEZ',
+  tamanho: 128 }
+{ valorReplyString: 'hOI2Olfskucgu2S2haugwt7ZBQeAoHVsg7C6MvFTxyuhKIfIlF1y7iFIu3CLu2D9VFCxNExMqTiqycTmKyZm7apzpLQDa4DWSDKGiDlXM4eJ93QGFoMeOya8LPqQu7WI',
+  tamanho: 128 }
+{ valorReplyString: 'beuScdZcGAHeg0qUTOLJBa19PtRxnvXXV3nAF1VD8Kop1z9gs17NZJpiEVkUobTNm2NExaANLdbuXllVVT2cmdZmETuKP4U7XMRhcK8SCeIldXbAQZwvwF7vPoxUTbd0',
+  tamanho: 128 }
+{ valorReplyString: 'Uqnfu8M1V3zT2GLTIZiCtpa1McorAJspcHpekJS6PKwi7PnB3nhBlGtD8fOT5NaLkROKZCxUs4IGD8Tma9wDtgFD3SmswG9eRI0vNQTOzEuQPvxC24lKAUZTrCEIXAvG',
+  tamanho: 128 }
+{ valorReplyString: 'IvWgI8QOrI1KLu4fSTkoUMCrqrUvENvzI1S3AFhyCgB65g5EbCLSkOpZXDHcLZyJSQZFqZut2SK1NuuXhLsZ5qiHcHN0e0wa2tHU9cZfNyvdals2mpgkfHIswx9lK0X5',
+  tamanho: 128 }
+{ valorReplyString: 'ynDrmc73gPSxMz5r1XaXo952Tot4UGBbT15U8IX1aA9wpnVrwAWCDAfkxKOTck3Zonh26sHJiEsfVinlZAbGeF2sbTuv2PrxlrXHdLtiKNDVNX2NFQIPGdI92Dh7RWvr',
+  tamanho: 128 }
+{ valorReplyString: 'zKfTW4GvezXfOhlsNsctZreHvqgvHOOUFWTKpoXn81hzRA3k2BeQFpHXOGIKOsI1Pw4950Oso8kim5K3NZ1pfKrmpbqfZx3fUa7VaBkpQQidoS17SpFsuaeN9Jx3PJCE',
+  tamanho: 128 }
+{ valorReplyString: 'CnVUHobtKZTpp728tgrgapiJ3TqUMlT66sogIk19vuNTmwXLRL4MDDSgWq4bgDPIHdLUpqrDZNAER7UsgrudrkBdnGJvO4xaJRzdqztuBLImlpfMOV2VLymMaGyS3yH0OP2R4GCnaysQ3zem1gFHqp5pFV2TtdnXZvNJdrkr1fBDMRiseH6crQw5b3omPJrTuwN1NZPPadl1bGdaWf7N42zinNU1UgwTQM0n8i70Gm8nRNmBSPBrmqUcyDN0B1l7',
+  tamanho: 256 }
+{ valorReplyString: 'HWa2Xk51ti4wW24ItrLPKX7boZdqssBT3J7i0FwNvsh06wUNCXci62qakXKz4WeDhIb1XsuhUFg62CeP6uwuMHsHk3L3KgRx6JNaqy3p1GsCkpPBIXyKBTBPfpCDsv2QtMgLtS6eTH9c4S0fBpULSzcmy0BFGnhiaOnvvf2DbemvmLAXlASUz4FhD8M0RQl7WnL6lVEqcuzAHOtxXSvUaP6Vn4mDd6U2dnTUrx2bG2FewNTI7xFbTVOcSU56pavg',
+  tamanho: 256 }
+{ valorReplyString: 'AAu1E9WgF93w61QQAONThGMwWs2Qd34UuKW3vC7I2thdVagm0zsQFD7Hww6ar17onNMx4GhZBTJbfTZnnxDRGlnpmguGivZcVrFBRlWSEDTgxGDan16Rglouw31UMQXcyNxTkOSdvf7hh8oLRcGKbC8xEXTBC8SGCk56IsDKbIG3mtWgUXRB83T3o6GyMzmNTCM4KZL0r1gZd1qAL1BzdECfKwwWwZNpBB6N7ZWuw87fFV9LwXfw3ZCkOvRu1Of1',
+  tamanho: 256 }
+{ valorReplyString: 'nZbCHBVsEUUxOrfCLchzAlZfgB8XiVgITyw4LVR03bnBs0gDESEHznT49kx0HmXAqs5X9NcVnlkLM3DLgkPx3Kwlz8WTrvfDrE4G1dtIU9funqA9Xafn5RuJ4Jkqpl9diif1U1lzHr2KNJTVJWwLZ4875T6IgdpO5X4Up4JkK3PMpriwcpByGTs2o6BWuPOc9PLtC63Rq9F3RrGVoZSsskUCGhhU1QMXUZrfQabTVPLQyd0wbuQLu6Vz6pIDDQDF',
+  tamanho: 256 }
+{ valorReplyString: 'PR7f5kT01UPGMf5v02Ebk8TBuqxDRlLwJMGVdMpMNrSaX6x0TavCMqWn3Jba4vivqSAfTOB0gWz3mysofOt5c5SR2HBivlOfV1ora56X6yB8miRhZ8ipT4ABniJXH4pWgCgtx9TmFU4AehCNgUXTRoezVgTTPEQJySo3uyFfkL1eE8NZ4KSbkGLx0eCCuHb0iP361RgXFc9JUM3f3xPW8erbdaCmOmR781fq3i2rLztlzlFI9c2dPtx9vy5oxVLx',
+  tamanho: 256 }
+{ valorReplyString: 'V6LZtF6LCubLnvSwOB3kveupfB8RLwUQexffpFc7g7f4AQ1NE6VyxrZCPV3xAQ67fKIyKELTmMI8Kr9TXs3sQJhvBPt67aTHBbbKoKL3vBloTv4kKkMU5BsWyW45apBof5Nh0cHTJ4kM9EfkGvAgucJhIBUwpfqFwxt3P0DQx7zpD6157G8OwG2sNGwkgClWMIy8ufdMlIlixv3IFNxlb6xJf9ZE0fSTEuxcxcntThBvpfNnMiTPdzPdpvg1TTgt',
+  tamanho: 256 }
+{ valorReplyString: 'iX5Rvnm1bFfeV4anbymTWnv87xhCekXHD2240rFMMxnpNITaUTQgVCmxuOyesFFlFlpOqfb38TLp8OnR1Xhxy4TRUXrZ6iqxttBhwGutSvanf9MZ4BkiNAHQ8QVyseRE3klZNLh0F7uhwVMi25UKFTwbGTsvRWRNGwuonpv8M7sAd7VrLDclvyk8we0CdsEgtDOHtGmXvbOwpLTtkn1XfLx6VizmBMtA7ngwD2xRV80766BZaNhlPDnHF39UbrE0',
+  tamanho: 256 }
+{ valorReplyString: 'huNI4WECgpnOrPs0Ts9c8L8dQ8l9cTJFpPnrkiqMhIzJudzTgI2EpNdwHNk1daA5GPc6DCOlipKOtocsdoQ17G11WWGsiLPO0yCndrFXI0ApBXAugyeosGvzCRriD3J6QLTilWxoRPhQeS6kxORHBuH1ZCTp5hmKy6G5SnR5VroT1wDloImSPsqwwo4hH6MThb9eNyItMQ5BuDdvFKllNefVACP2CkuVop9LMtcUVL9FPRT5reipC1frzEgZTk0L',
+  tamanho: 256 }
+{ valorReplyString: 'RxiTktp3IwncHyvEmIy5BKN11ww4iqybTTzpn5tN9wywwyby0xnvARRJTcc1tbhs2r7KsqyMESa7haoyR3QyhK41tuNXz11k8QndxkyFmgRw6ucleSC87s58Jy96uV4i43y8pIl0PpxPus22Dp2o0aqoKTf8uisA6UCb50rJUJ4t42IPTIWlgUpgu71ZN5VU5s61IhTVxVT7Ih4l1RN0m6tqK21VNTfdrQeK1CLXZnSEWThVGr2DrXPzsawKNxbc',
+  tamanho: 256 }
+{ valorReplyString: 'VFQp524nxxXI6dIuUIwCRP324S4cNwNzkPyJvU4ax1fTzl7JyNzI13QocJSK9Gin1IgSNfzTpqlTTeZMQFJFOEtzBTGdsT2WAsfcgXdS29n8mBTN25pf5qOrTz7HeJbhuavRSZfciXXQrex9LfkNEgfJpN53R9stXcPrEecr6qonQQZkgxPTm11MSfMdnSCwTImepnl2VqTVG3osmcwgvBcUmh3MNJq7RgpoeiinTI4ChSrNvw7K0GQBFgRAbqr0',
+  tamanho: 256 }
+{ valorReplyString: 'zi7zoevEeDxiX6Xv1lCF0itGnXRaLmI040m5h2Ibc3MFWJaG8h2P6oa4yHhnqMoDgef9TMNPxoVGrFvhpgc6Pt9rVrym96CKHFMxZEFO5EoZG8OzbzguIL8HL0h2KdDU4SdIJZZ1lyRUQ3ZtVHsP7iIFatwMoTPi1GbbQi6LqpJtNRiq6lf0SK5r5NaXFXH4myiuBTbTVvb696IWhSzf5uiVT1yZbq4ppR24FJAJlCeIHPwei6NP1QuoFuGentyzgh90JTAAwwPUf93cab82KGyFLHqk4dpWalCiQptzChnIRTyqaqeaZXDwhp2SfRCU0hgrX3bzubEzNygm1QSDTZNUvN2WIpRkwxBwthsFKmhuJzL5G5WkNbgVXcDwsSgJHTEJK5tV0OvH1JZ6B2OhB1tnCTdbqhsJkw92MomA0K6xMuzbBbIVILgclmI2grLmEfUalU3bcLgpx9UDEEB9rDKib3BSsEAJFwLzwyzhTkK2gHl0c0ng8FtRqcrTE1tT',
+  tamanho: 512 }
+{ valorReplyString: '8zHArMEsvTkD6ZFtU7Wushx49ewWvn6zuTJX6wvT1DJhEpxR7TiT8ZOrq9D85LPpVmOVJwAen07GvB5kK879e6R6WrCLy3TOXL9GEZU2tNieF8ynLHs1TE6PeDTmC5mpDFIGVVXRZMVmdDhCRKRRI55t38yCFi5c0Jkrbl95h0tSBaJb3labEgTteSGfpmak22DU5mD9SXGnCEibD4pHUwnTWqgizhDFd0U1zxpUbQi2VzI2cPQrVp0xN6xisJZR6d4ThqtV0hNMxNGVHstfBT1znXxyp7MMhhGEyCJAkzuxCzCO2ZamDbiIoWLaTTxaZfKA1NFD86zldxhK6RmUIJZRW3dKtLprwiThS8rogT5PT46NowQnDx2KsILeWVgsJD5s0PTZGFbxqUdw8AQsdJPGm74tBBK97TyTLbCKhsMvEDUGp6y0ioXL1ZmXDH5diEinPnvhWoRLkAyZGcVunzrBrDEhSNruLKhT2Jnqz6btLTrqfU8oAaZDkM4v8W3T',
+  tamanho: 512 }
+{ valorReplyString: 'Lz4CrIKswM4igMJ8NKXuBcV6QutSR1Vm1TcST14rNfnEwmoyklRTT9LxRvR4BDuNOxyBt4RlNmExCIdIImZcDL9hzLTtwEUBOf3hz3UZJBpzqv3yUETUTeXuVIBIIxVNzXCl2AeeadvDXscuf9gPI8nfPsnQAfrPDrt5foboDJvGa5pHD4tPuKnIOgcG1nt4dRncTD5iCyyRDfTB41sqzO4v4FgrRIIgHWSwrD3JyvVTt4fcNtf5Dp1gBkGqFXg4pxRg2uE4eCaLPlisEsXqHMHVwXz9tx2bhhXmy6NlA3inFRFmXiaytTLozIHbELfDUOaeqlSXgyi2ZP9IbIZTaQLMdzVMDePS78eq7eUaOO9l91SLB13NND5GZScPL1n5EHfCa66FlbVUgAk4oBoRRKqcsaJqWvLSscdw92G08kgyeJTrJ16s3deOGM30uaA9HLZhA7rPf0qSy9Wc0qeONcVfMPFv3bJiM27g9iIN4ZAEGfG6ANZVZSb7XswOBTmH',
+  tamanho: 512 }
+{ valorReplyString: 'arWBh8OsnJHcIuk5gZoX0cENTQNFnRltQTq9GoSiAqDdIOFkJQ9gX84d2LPXCThQAMlQ6wrN9Dbv0pTNcMsF0mffJUeCGRcJ8HNGiv3zpIH8UvARS5NlfqPNN0hsJArVQem3caxxlZvDZTIcWGLFuXXUAcPEtbQF7IohQ82PJ5QSobFaAmkBpzvNbvBoXBzGEdBZTGiCgfxQXu4JccKroHkrd4FeEPyUgHeh1UlMFD5rrsKpxIhIA3JmWFqoxQkRnCVBFHkIV9SeWWKX6IeymlH31eIpQbp1O43gOrlLT78TpsT8wRp9cR44kwMIi3ZgU4uun89bVQ1qHuhmzWyT57OJx4Bvw7pDrokBC02b9uaPQrN0yXThkd467pBExkhRqNGTfBGu0pKA6TEh3QaCqKTBVQzVbzQx0lu8qsKERTyRa2MM8khTcWFZfLVrRJIl5SPLGtKDdEBAFUTckxMkZDP3V6ugezbcPUKodXtZD2yiQ2VzTZCu9bLVJSR4lgFL',
+  tamanho: 512 }
+{ valorReplyString: 'TBK8OwFPOqsEBNqi9ZZQAsQODuCpZAJixkGrLG3I37sc54VO5sDV4O70dwllOxXWxNA6b3J6dkMZAMRTdAFn85BHB1IIZ3TrErr5wTCoqkmuU7CdzeHkE3FGFOZaLuwKx02KugaSUsct77nbkr4bCTOzWbfEBLHr9ksdgxCZIan91FysxwlUfIdmsU57LzxGL2RJlIm2VGXTJI06khxZKKF9MSxPNPP3EVGpC38mt2sMJxTVnPixGX2DCQoKZdgSRKwNKTxUeESS3FvSqVFpx4JQzVOaVuIRlnUVxoChFvvxkMcpq3GH2LIegapI2e2lLwOHv72gv5Uzsn9nANdphwF7q6CMSSGbhT749cyOdOPhJ2s3NvOz9FDVmTmmhrGiSeVFfFDK1TIiRp5VqoV2IzBBFo8Bs4HaITfaqPuaNuzGpG4iEgEBJCwdEFghRnRiqGFEViTBXTTpKEBTRPQVe7IkzPAnxtKusbSJwcaRsKLnQI1XZ1vX0LbMMsmetlD5',
+  tamanho: 512 }
+{ valorReplyString: 'RkG4pasb9vIL4q8CSRF8HBSGe8vuARw0QdhQTpEapEhPggfBgqFdLnMZNVeCRHKVVKt48ZZFKwODgMvw9HfDuOLAuvOGnLtxnk1Itdct42beXfiScpONlAhKLMFiukeovLFmWHVMcpRFWUfVcqUWOWvDfE8uyK2Mxkb29ZhFdZnTLTFFlS1c2RS0ruEpT14Ud2zF12VNVo9Trtr83lQbeZOeoeST9glHzrP9WyIGnz13ZR2CFfUkgURHV1IvJJOG7kVMChLleJM2K1TAlRsayAzDZc3qAfwFE6zaMIXg0Lv63GEaO6RnwJsUCEL3D4pDNlApMwKulya5rlMybCs6LeP3lEW0mHu8WGOTgWJgMT3gwgJecTTZxey6c8fqpolM3pykfoXRgV60mR2KGA16otA6NNNIcVSARfX4TCTbufNzC4DJ5wB883AMzWWw6ogFmlLMdPcxpJsP2lyqSNZcx11waRTqgDt2TJ4TgtH2sLudyJHwq6TJioz1aNbQKmc1',
+  tamanho: 512 }
+{ valorReplyString: 'tGsBZUvBMosiCuHFv4fCVkXbeD6bP3qwXvqlQXHIic4HKoiJym5aut4aiOwv3yb6MC9eGnhUquUAMdbfn6smSs8gNQSSHJQvEX1TxHiiB3lecDhFrTuTlL32oqEmXhWcNdqXNM1ZEC2XTE6vck7IKaV15iEq3L313b7bHxsQfdpaal2xEyLZXeNrMuyI99ulKL8mGXVRkhTJb8oxfpVJ7tTOp6PtezgEcq7snvJrovQcHF1ioC37CTRkN68ttCHkklfrmKSUvLwQXVccaX8a3vgmGQHSAfJtxBT6zxcqPLKv8O9LINXK5KGkkWKa92kirBq9z8oJ7Dp9Juu4SxRrhxPUletKEvcTRerAxy8PALE9U3Sqcl4WJHUMlSvAI0UtMONBcX4fQ8nmUSdChdTU4hN7s67dU6d4tClkSMfJkpZ1l8qMC43J43M41Wa3hJ1zcqNVxMBoCSOFWuBxeeTpgFgIF0Flr2smlvWhTgrUIfIDm7NqLswlV1MFspv365XR',
+  tamanho: 512 }
+{ valorReplyString: 'F0TeMnmJTc97WGbdbXkKcQ9Dexv0cvHi8BABm2mUx2EFVstv8D6Cn3vk7MST3ymRkNf9kXcmcU0xJq8O1ZPMyTqK7kzwkms4RUW5hRQaFmk5SA6TRoWbfChTtc35br9LJPu4A0lpmJw1gRM0hEIDLCrrobJqfk2OKmyQUbC74nUJsl3KEr61QdieBRKqQm98SwKJeLEZA5TTKVI1D6gca7UZgf2faDPQJ5kKLQvdST5cExhhoFwRPSb90AAfzapKcaDIFQ2twsLmARSS3HV9PG2Sgm0fZBNfbxfTpCZv076FvyzStt2XH2X8mgGyVu1a3aRWHNicIrFBBRLipxtMOhUgv5GqQV0w3qra968TVTKoDUd5vNoxTLoxtVuUX4Np19Uxv2BFoHzbQNT8wN3pibM1yBvc3zTL7ouTUTedEdVUJTZaPncslsWBmBMzMswiaZVK6LgsX8sbPzK1T2XhPbDR05ozTBdJoOaymNeHxJoRZHnvSxA7wTlTZN3sk2NB',
+  tamanho: 512 }
+{ valorReplyString: 'eFn9WwgPeSdtTcxmoGQoWJQcp1TTlNTCAmslGvfA7l6bQJ3SRGTxM3IhyS34KQJXvXHqEmwQ5Gi8RkT3UfGaavrknJTsGk52wn89BE10lVbff9aE14bb7vX7f8VB2JQ2zxs7TMa9sTwtvSfubEAf4fgF0xkBeApQJlbUvTW8sqdz0L9Q30mPvUDkgTaJIa9G9F7vPlVataKqakH7hL2F50sDbP5mqIL6ZOTiK3GapbJDwQ2cppEipmEFyfQcXqWX5ct5W45z48OCMLQy0QpCQwNLTbir1omdcpS1ecue1GiP9M7aXTq0MElOhy2Tst2H3d7QWQfEMtz18zPoQ1100h5vaVeR03BpwQ0lcyn0z173uNaSy1tzLEBKad7D0UGviKfE5otdCMhHeZE30vSSL2fWJnUqsqmf7vuZTuZ1FUZJo1i5973VD0KC06b1JySNdyKUeuTVETxst9Ph1AJSpxuBvLTgDxof4Cyk9T9BpldCqVbrQKoXxUm7PytsKysw',
+  tamanho: 512 }
+{ valorReplyString: 'kP4UEgp577GG6XBb51C7R6oaOLBgTNmSi7WTT5xLx5nXxwO6DVbJ05eAwtmmhXAJ84dn9uNblQF77x4iu3nG4RAt0BfI2XtR6FPfGmErI5QDEf6loPTG4tPVAzZiMweSAmWRBuIZobUlDUHe7SOPQHKfqzQpg7nLlAtcVehmE0fIWnboIPCeNtbQQhhmWIAG18iwQtqEKL5TZC5ndaQcgoePxHelWHSQ3cQKt7zoHSzkDISTvVsTMHV0XuW9luhKDiUqIOL5XT5xFhTZChmyJvCWkbf8DaX9L3WZzigxZGuO2RHoQoxQp9IUeRPs3v0uo0LtrMMOZmGgDQwhRsiSm1ip0NQctLFCTJK8FyZLrdrdPklzQeCbdJeesWoPINGpD9ndN3yntUV5QNAP2kLPrE0NOGZLTUr9iUhpxaIdcInMGR8JecnDvhGIsJ69MfNNk3yKrBmVTHSzvTkJEKNTtvxIGJFW9791ITIU8BoFd2IbEnsNzPKoT7lD5gvoUNMe',
+  tamanho: 512 }
+{ valorReplyString: 'ZEWEQMTKItawkWbp13GAlUCXRsDTLVXTUQfOeXXI16mGqELpXWG8ocz8pvSOxTQgSLDQwhA6FODB2VVfzBC10hTgFXDHufO0FC5fp6aUAoTPkzPUGkgyNqtVqsEy8VuJcHdQtQpf1MUWDBWvhAoD5QJGep3oG6py04l3QgxDfsM5lscZ1tE81RNIHkSGwmm5u3embzda8ut3XSOqUB8hkRS58xXRq39FxkObVtuTvSoazlo2pTSo0zm4cydsMXK3KqJsaGTkR9Mrcxpiadnsdfs9nXK5lowt8b3Xn3VqIBauxNpluHwx0hT9zQyg837xac5WHaeSATrbr9FC8ulDLoHFplMudVSb6Uu68F1swUO2usfTHsx9JpPkg5M36bpbokMbwfq6UJs40BTGo5cU0lT67ROEhT7u44R02evi22XGPI7wfBcyTUwhF84ftbau118orhxTFkV0TXFXApB2h8RNyXXOMnOB5KLBWQ3xqUqBOF8G8xcZrTWMJmP7PAt3uNzlhOK8Fil1eeHKu0Pl5u8cDJNWSQFnEwrrkibqI88TXGNk58Xe2On6B2wdgt4wDpNZ4vOoWy6u5cVzeCyZa5XkhrtgZAtvEbHLTp4o8vshsFIiZKiuVyvrcuBSQbqgtdTm9UiKDDwhRRdewMxKcgDpTMnh3oKKbNCAiFAGCDivAOfwrpXf5sA7uSDxzIIqmmwwvZ4if1tK8eGNhnrq822xe1l0MBQkk2rNRc3qPK5gvyTdcwJODUb3t6DrTRzLTWxHz2eiTFQOfi6tw4d0ZSudO2bI2et6yXoATwiqzTt1oDHdZW94d4UnG9PieykKs8RQftebsgq5DyZZkU8Nnra5COFrwrdDl1kmdNNlZmSRl0in2Gc7DV64XnZlrGcbxAkvte3tQI39t3pAXSqX1xKLkOFcofUS4Xelln8dGAPSXPoGXizCveqayJRzSmaZnTN0KoR4fQ8xzFGWCeTLT0oAmqp9SciHpIERnIGJD1dJMCw4RMO2rBZAwgUngakD',
+  tamanho: 1024 }
+{ valorReplyString: 'b43bxTJxZNPmF3n2defglqhUAZvxcrs5NMun1qvlxerkc2Sbqo9vgmTJK10alva0sqpeuzkPJHf0Th8ZOrDF8z7wg4uHXer5LpzGb7KvOoQknn6i2KJ7b6gWV6HWhXb4FdH2Ew15q37T2XkU1XTTBkcIp7FkA2W2TAqBUOWv9GE2vg55GrrzcXdDEDmI6SrbiyTgklnxMaBWWpFe3tNpMo6eWJUEX3hl8rRTU0uNcuXSg6zsiUO3bWkTPIzM7fcIoXGd8zM303p6lmVBiOWs6yBTCP2Wbcghqek49Muh9FNcBLhxTxIEWbeGRcvGGf5tpkXFXNhunlGC655lhUzkSAkftQRIcVI1G8oQJFqn33GXtXR964T4H6LzglW8taWS07rXrP3eqVkCTfbAGhEabzpfKUkAOeMQ07OGlnR83OSeJx3TcC5d2P8hSiBtesVKn4CgeKJv9UWa36I51qf3fKykh2Px5iO1JpWs2u5A4S14EEod4LtOEVUPVrqIsXWhi844wt1i7chxKfrLW4sxr4lc2z8F0H9MpynfvtvHyXxBRyxf3MsmK9C1mfSKB00mWsTnnB1zcnvUGvLlWCfSVpAsfag7mtkyJKRz9KbKlXy8txk4OizvqXuB9iiuS3XVfahxATG2ng5ce5ed7y3xvne97r1r50wlnh0lfMb6HBKngoN3KT24GidKvw3CnumNCTpdvunwGsoBaG6PJ7TPasv7EAxJnrgwiI5PS4sH8upJAIg7MLMy0deKWZA0CwavUgZk43Vm61vGkMvrR1WJUp0e2l4TwA2qzLnDpKZrTN0H1M0kE4c9fEqVDtel8btiMvFHbfdoeWUtn8sucZSWCuyierzUogM9Q4FIbqHZd6X2y52Lg5er3EvR59X6OW0LZNJR9rcev3ZSakbXTnvKfD2oLcrqI95tqvrQ32SKmx5Qd4gcH9WZ7DZ8OVeUuGeIPHwb0ov4ORpmnzHtmO1wq7yNitVvPVq5A0bObzNLErAW6UxAUWR20hbHsIsoxXH2',
+  tamanho: 1024 }
+{ valorReplyString: 'sT1uQsQUhUFLXBMqmGlbviiFFrg32HUIG8IHaQLUDmpUBzJmCIHKx4o9EwDFgM7DL0plDSvrFHeXZe0TTgUC01u6R2zeEaJKEVg7pOtXNbFtGItWODz6gdlOC2QhTlua6nUOBsJHbdPnxxo4JsNedhPPXMW9nTu6JeTDiQyaByyVTXdbKnU0UN7fKIafozaZknuN4cuuG1ylcdEdnu8Sl7FJR73eifCoGWGNrlqUZrG6mITeXT364HxPTn2oMrKuS16R8xywpoTJa3LfZTqC0UvFnqMfaRqrIm3BgkdqMgVPGXtHt1neBzH51CF66gs3w2ynefbWwPmGVQ1PCTmGLTR0cMQgDmLumyM2BMiohmAmHxtQ5RcN7L9oV641vD3kbpRnUWPacOqlEie8fEShRArgwT5mMJyPCWH1GCSkfgTd9tu8qrPt4E0QMHOxDzCIkEWNp8LaZLi3eewABSIPJG1zaH8Bo6vAz8e8wiLGWEZls3Ah3ZkrVB9bcGAZs32np8ursv3kyT9UG1KzDiIvJiPBgyUXcdUf75H30iJuz2hfNzfbu4ElDOsQMBK8wvB8y8SeHLekNFWyGhTVCJhxVbDtpdshkXXqdPC2CU56m9h49qrMy582PyTNbUsUKF6XT7bsoap6NQLJFZ2mPS1vQ8BfslphBBTSXa9c202uQIvn74vkKFGThXDpGHiwPWR9yfQcJv9g3zo9WqJ4GXGyzzaLsTsaueWSAD9KRBpXJAhC5Vuq2tH9z2gmSiGXfxDa3cWT70OwZWZl5APD1pvuRZSDUEov8v8E7CXJd8vlaC6G2IySLPyTOIgXiQ1av37pwecOhB1RWNOKfiyqsRRqt9DScah0yo6wIyg7J4WIoDuS1EcJBoUcbehmP7ygR7EW0InVchMNmR9ELM1AVgclEAf5PLpyaT32gzGJ6WinMSmKasxArgHlBLFEdhQB3pRteyLTQylTvTCAnTv4LTcSqkZNeR7MxkULgEM3zpFO3RJ2HOt4rmTQyZJlt7H7rDcs',
+  tamanho: 1024 }
+{ valorReplyString: '6W34CVQvK8HmmJXE4cqdP0miDFTC4cl8uDl8xLCFsUs8ARdBELXJ0L13Ck7dDTDTsiEphqxePqTvUoTq5Mulmzg8MBCGGM3udlTVEoDW9UXwizz78Gte4caqKa4oMS2eHxqBH676yw520bwbZRHm5N7FTEGDaTI2A9QKyyO8oaC8rtWKVDK5AUyHgNTgE4adSO7Td7MP2FhW9rssxQ9efaxTNReIPvUzrKMS0k6vUTAAi40xec586Gic8HJtZFQKa3TV7v0qZAxuTvKWG6XHiDh7pNiVgIPsuJd882kIO8TDztztmuXuUUPa0yQ6DLrFa09JopDJ6TEKhvmntB7XTD41Xbx0SCuqyyT9cCz0CbANRJSIZTE7ql2AAZU7VuaaTC4ZTvkPCrLDF3MB9XJiLREt6Szyrhse5WhiPfpXkk2bh34khLCEkmtohiERMx8HJWIpvleLaPo3ONmkTFEsdhglSqy3cTswzqCSA0vLZCLhVAPSfPdovgAUpgXyKvLsGTSIS2pynUTRMu5v5kvbpLrPhx4Le2GJcGTp6EhG3CievauZIPoavytJXRaIuUhOBGkB7pITI2X6QzOLuxRJbPtMBECfTIzd59W1VFlgpKcK6SZO5PilvBxfJGoIsBxcZo6y9oVRNJncnyghSLWJFTqffz5G85lFQZZDhq1pP481gNpedOzITa2eWrMXsTkOW3HRPxx1Qwya8LKpw9DJ3K9ztL4cgscl0K21avvkKMZtu8kvARIChpoJJQSVQO4xsiSdQmovbrIlvJReOOlekkdERRnBfUnRDOdTx0yTDDMLi7A24OS0No1sKItKyho9KsOkQBImHaGKNVs1V8UOyOVspcbC8ADQ3g5AfC3cUfGRUggSE53rxcBh0vXORwZR6hL8kEFsZdz5Woe3yN9Zx94nefr6TKbcGNnwqgWmvEmcGKalBPOSz4VRer23oIDJ67yA1CtookbaJX5MsuEocxsVgfBW7CHJzOhTmhRWcQQTEzJHc8N8nz2CfFwiguhZ',
+  tamanho: 1024 }
+{ valorReplyString: 'ARbqhGl64vrKx2To02hwnNLLAgDBoczMsEwrO3hiWrP8GhWz0xH3n91zoTxmG73btPIggw7AtSXM9ZB5HTTUyizQdOAtQQsDziQTVhcBkgDJ02S6Zsd3geTk30QRZ0K04Av9TZq9pBZnZpRuleHIp8gKbPyEnHrt75xDhpJpg2xqAO6uDCCAG4CnbkExk5Q3ElscJxdG4nAMa9oaNkb3HWsJLvDL4nvHQQIfS6pLsirPZTxo0NC40qEeeCIHz6FXRBi1lDSvBMZlop7NdbIMFGCM30cB6E65QikPoByOECrTV8GrAK5s89UpEBrO2R0LBbcvUpvwX3sIZIDWZXABE3WH1oG38lwFJlucHGzGlIOq5eTtwOE7lomKXLG4ZbTTMHd7KoczWTgzsAz84mbXySdAuedPSOxrnIMvG48MXSBEDsKmvJbOiLyRlheegwzTk5RFPZcwWqiFNsTQHaK4uGiiFfZGuu3SaZhEvTbEcaTSnrJPkStxBBDAnxcFIfhG7W7e7kspcIfeF7oH1ORQV4Rs0HiI6RssPCfETLDJzKzTo0nbcXnTJxVHXTzZWpbCkJlpUc1KphurZc8rwzJQT7iEZVJUeRJIC0rVwx5ns8h2wFMWT85oTsEUwAvbbew5dNR1CnZQgraHetpSJeK53DpDiiQClM6FqGdObTwFHTXtOeunfc4d17p8MCS9JdLmDbn5CuSGNbacmhnIWbeP0uX19AguE0aTt2b6LSlHg99bISUs6VuNr8seikUS1OJr1liWGUBT6BhiOMrtb9ObWnFTWERidM5waUcToAchIZAq4Pkq33bScG02vx7vVVTZpguIcyQsIt1IvmQGGX6o4rUB2Q0TvvZtzl2ZzueK1L5s36E58FUyHmxg9L8qPAA1OT1DhGFdKKrpzzfbK0E7noz5hkRUshp3zczXkRm2wHBHEdTp1q4ATToMIG9ilKsT6AmLOrogne9gdKS8S8REuvqD6nKcFw90TpDRn5wnZ9bmwaEWKVlCH5dWtQEoXJQs',
+  tamanho: 1024 }
+{ valorReplyString: 'Jv6tTaKeyABz28omqZsHe4JfVCPKurUSDNf5h2ETA9pMIxOkuKyhyOwnw95vRRG6yhmdsuvq7nUqtshhiSOhiIFLUfJMLU9WidXeCqsGSJWIL24F5qlFHn9UfiJiQf9PTNAsLdvFXyyibuiaJZiksZfDykBPCAi7lxu3oLB6bNFkFT8JFU7i70fm4ayAh4g8rDS7Bh6QpXU7f7fgrAJkRuHuE5Cyz0mVTsX7GN3ksxceTZduKnDPrv540AsPbtrTFDy29TA91ugSDqyheUr95UwLnE96VqFSIu8h5UftfDuEulTD9UEOnlzmfwwQTqXilDm5zQ1uvPW7UiuTrNBUW4E193cXkwRoWMvIBvntNC0J5kRW3RiMQ0vDwlz6C3qQqImHavViRULutRAmuGC0oRaZ1QTP0Hzp9Z9N7hmTbWHNcX00OEus1OGWiSDlw3MugfdzrMC9pE0zIqyIqB0BhEFr4WTVUvELliqnIme1oeXz8S6xSTV2GtTnKqHqcZIBvqpN4uHwglUqEqTN23CoIa5VAaLTxlgafHA8CWZlMT8Gqw82qcsQRIuVqGbzQbVBzuJpPq22en8G12q102ZxkA2lm34BZAqzRSd4vyTDlz9JvxgM0ICvWuWlzLo8gFkpdhnmGsXSCPLrahAkPAfBWIQ1LxClpTw3V96wHxWRwRww3Mtg27L1WUq0l7lTLELM75hTD1JWfF3nm3PUycPG8Rh9K0mxooBEMIlJLkTzlwumgK8bPZvWPd6ETaonGnbpHcO7T70i4hkQE02S5rtEU51IdT0KAk0U7S2akIBTZev87zUqMGz35HIWWlEgv4xn6neaNHBZ7aHB0DfBDXhJEtzS6uLICdDGSUeUhERlbTbdNG4k3uafdT5PLw4kPpewQtHmS7AVIE3soWFhnSP91wrMGgzgFcL40MnwOMa7cRKFq0gs397ngwPtS1HD2ihPqteaUWyLriQqLoKipm1CyvPVs64cJ4y7ZoTqxTirEChveN17T4Ls1qZEomTFc2T5',
+  tamanho: 1024 }
+{ valorReplyString: 'qhHvtzN7Qg3mlbObNmW08IGVI2JKUFuqizzfSh0u4fmKsxOhm98sC1OvdsEDUV8OCydm7WZ5re8uAkBnqidmmkCLOZItn5XkeBTerpKdggneQGGUTiQ5qXFk0ooTvMbEaJbo2PkKyLMgnNaB3TAIcThL9Mhil3LlslMuBRqzdquuSaocMF8aQNMuO0G9TBKoF6A27fQpsVqWSBDWWLtf25OuE4e4rDF9fpdNf61bRJ1XZWoGM2OqziGMJkB9PDRwxfxKGEgFiACks4nZsTn12AtITGe8OZZdRMTTDODO8bbW2zOWKQZ041Oi1ogNpi3E3HdXzpTokIEDJe4RNJr3No7fobnQ9tzqMuklKT2lsuLqyJhZcg9Td3Gr2PSvTgqJq72K4P5K7hVy2rWVpihJgqTvkXlqmcIugNaVnwQLMWdysN09OGHwRT841CDTy1i9gQNh57eFntDD8LUGabLyKpXuGtcI3nyTMeDAxt5RgrUee1f7BlXhEbi9c7dGeA5PbnQB8UFdqexJ6b8uH9kQ9SHOUSlVTIzi8Vn1HBON9Gntoa319K5U2yPoy3EnUb2up6yyv7ilmMWko9zfTwezya3pUBoQlqeO0dvZz3RBKX2rrc0UgAwo1zuNl0G03w0u9fqb1hOrkuIsulTSCtAO9IPpSf9QkGq4U4WN2MFnP66gpZZfShvW08yZlvgLLUipxDuKIrSyhZHQ8n87ZXJl6B658ToHMRuelfTChcnqXGdlo5FtDZM9gmzUqXQRme6ubi9sQbvfOCRM1cTRWzIywx7sf8UElfaILu6hNFzvg4orFRTDWsWdToM6KsAQJRVuFnQSUHPXeprh1OIpBHbulpocdlEwtOXdOnVa6nUdzxJPXdOA5TrRW1MROx9NLUTXt4gRFoBB8fgoLeM3Ny7OCqynfhvX7oqlhVRuqFhcuZK7BMqZZgTGGZvfWaTHmIbCmzUaOVIFpsOKBSwLeVkiCmk5l55qElWAR6JH3uNJlUSio6L7TGvvhCbn53XOPWzD',
+  tamanho: 1024 }
+{ valorReplyString: 'on2zZd8lDNqsfk89UbT917bsnQNA13OE7JK0rXToJaArPS572HTFJAqk7MAUrpxH7TKHy4kKlxU2p97BOdeOEWtrOb8VTB8FaIUGM5uwxLmGyMEgRlKJyTSEEvcoF3n8dkwxIVS3vp9zR9Vx5RD7Ra43MNmvEATyyIKg1y7MLPQlTMLsFDfXkdBHT21sbmTsFy8tBRU0O9L9xR8LmZZ4rlLeKg9iWRo24BlikLQpcGVTLW8BCI6wCL1Qn41RgbsE6SkQf3NiQBRG3Ik7TLtrcQd91ixxtv4a4IfJMBUx0XoI7lokDrVTfVfhK1TL3X0fpMGaQuwRSr4RoKBX3V9LpVKApOv4ThJog12KiP8sWC9T9ADDTRL8emHGJWsmrNBQ0M1pZi8TnHTwsO2ErQ0BvCsgvQpfSf5BXTqcRnBV4w4puS3rqTPLtxZkS9yL5nTMBycSAmiIToQf97alUtI3BcRiJn8MoaXWZEXnump35dpVv6MXDvAERycv6z1DhXNdWUIWlsZ2be0tMa2zE0kQIC2IQWQexPnLIZJFz0yhW2Ab1Lcxb19QhfafrqW40NOotIDlXfORpiQFV2TnSpiqyFftuvT2kyOZX288koNW7K5KTPkQMiLODD75b8dWITws1zshIoxF7goDTrI1COxAk8I0TPhgxiU7qCA0lPATBELbTv8XBTZ98TNL7eS7Eb2yL47fuFTA4xe9EozJvKXz2KiK4umufK9AJeHhnRqVhfEgyBQptf10yRZL73vdmDPb1ibksUCT69iMIXMt1cyS9D1EpeMIwm3EfHeoFM9FGC3HbNyU7VbvZr38ktX918uaRw3MgOCcVENceG58fy31UJV5WT53E8boN2TXeELwca7AI9AMPb0p5LAUS6IJrSW5T4bAbURGdK4WM0pSipptLuX9vwXaKuNe3vUyLeRGctIgnaGht2a5p0ATZDDHI2FBPPN7TlMU00RI9uTG6UutndSGxOoAJn6RhiCE5oSnImKqxTdPWDAffTLA8CA3qUdw',
+  tamanho: 1024 }
+{ valorReplyString: 'oSMmHFnOXAfnl4wmPS9tDugrbnTKGcSTUOEOIFNiNexQglsHyreM8id4MfD8Jpni5ukDBISSHb4y29g9nF5x6ualPALD2x7Rr1pIiT9thikKTxmfrHZmwCnZxu4VptFeDUVHm1VtgpKZnc8RWv3xNhJ38rzqtQc0OqmaQOrgwRPqbx68StyyhHX1LIRkrE8tGpro0G1Tm8I97Pw3ty0z8fTs9J0w3dwUBe1LTPgqcMFMeOOMw6NvS2I71BJgFtxNnxGIgeMcTC3DQnN25TT1iuCVrWaa6oIZJOrMs14fWq1TrE8IiZ3CcUoGpUkVMLFgp6KzTEhyVJdNbrb12daOoukEZv3SOfgOEHGcScAkXcoTI2wWU0hi38fOvnG8Hodoh23DsopkFw2a16VT7exfnxoaIc1IdSTn9nZMTJkiDn1gXKxCizHFv7bSRsTTdtdJrtfJmJSJdNKfX04eTw4TAMUdTfbP8Kkr4v8CLXclrvzJQ7NfOJvg1JvGcFtTlRQhUTvfdeuPtWKscZJnzB5krxp9yF7V2lUqHC8pN2ZA42KTB5qu5phToFtMismWcGnzNMtvy82FURzRKvtJNTWOQ1UWKawq127wxOQxNopWBNVyFuuTo8EhiFuAUe4WoCCNw8otLbz7peDoJXWSIfHHXRUAZ5bwUIS7ruxsUc52oAJugQkfsZBvlUpAdqma5H7sTQtQa5MpdAJfWa4GOUMXSJrbpPHWgPorv2qa36WmDirG0P7xyBhMTQx0l4B9zDTcCquVD1sk4zlsoKiTSALSPO4lH0BLsxFfw0f4TPGVCE1DkXZfppusOgEOsO0Zrus783eSIhkMcEcS9NbdhWKPk6z0vVSr4DO46VHDdZp5rsyhsATzOnufbcpeesFbKzEdv0QeCpSDu731lcyz58QfLgwCIzDHiemFcq86mNeKAKyA07oZS1d5Ns05tAXUD29ms29VAhQrnPOolwFD80TLstrGfcxpnkeg2NPX171wrAh849VEaAUeWxhBumCasScW',
+  tamanho: 1024 }
+{ valorReplyString: 'yc1TMwx554OVJIm8khtHcvU6pTXrtFfCLyISTU23hehUw98oR8df7ewHTRNCiDiMsslvNqvtRThCdBLebXu6G0THdt4xKUMsLsTET8WHwDcHgrNN0V2mq01fRvJK5CTwJGdHT0uHtaGskK9SvGmT7fmNEInsVBINDm5NEhmKOadOS7ubHsw7geGBRZUrwSTiWoNhzCANTIVqJNf0yCPGFVUpETKmBqcgVF3xELIBX47NAWnsUMBXASGwfmBAxybLfTmEGgD5tkVtrgFqslZ0gi0X6O220AftCsElbTIWJVKrqLFUJzKkQK3OlhVvh5vVuBO7wSJamMgDHs1I1CJLEqXrOyNx4Xp6WLLd11FswsAi3BztqDqXpSBbnKfhMy1oodJL6sdyQ9soCgGM0Cx6xMyKlTiokWS0E33pFwZTtCwRWvlH2rZThADETPdmx8Jn43D9z3rkGMGBKopDUaNkgw8URlJXtzZmc570iPgSx0x3zFNgPJ4hmREuKzawozdCqsU7aZLc6BPNzgC9zGTVd52FnkQh2Hik4UrNwsUgientlsQWE5FFNPg7XOcZ524F37tZuFm4AJkrctuIUbHMNmGTS7dWbUsHy6kZffDmeOmokWDR2LexExkgOqhoTe2J91Bgedbv8l2ov9NXWKpN1c5TrtuBkBe6TqoPc3qU8uyVJ6kBZ04yglnTc1MSEDrToXEhNxgO1x4kexaOwhTRgRIEGD0gXJDZeJiI7vV8TyieD07B1hbumUOfdaeQTy9RVK9LHTB854FEWH9H5BuGhPVR8oPnCQa1cFRLrAOhhDhAMEarniNhuTc2X3hg4bUisvkSLTQFS0RqO0BU0uPyl5wvLNXb3a4pHyG6TAtg9KcdnotKCy3w0mNN0JRzFkw98gfXq6ViouB2qlpCebimzmLb4kIGQos9TLgBf1MXLV7MDQObfshGMkPoE5dL2T8QH2idoGWqy2WguqbLDhUSnHoQr8mtUHQTWbhGlwOJphcK6b0SdrswlDL2eOKJ7Vns',
+  tamanho: 1024 }
+{ nome: 'UmDOpEp2gU51F34BhSy7xsqV5fgaKIQmhyXaiOdfH2Zg2GkJH1kQUeLs8nvbUINk',
+  coordenadas: { x: 227117916, y: 49442813, z: -771756884 } }
+{ nome: 'cMqTO6tClu6cuH6ekc5AGybiGplR8ZaUfuvtaobTT1fsBw2pwVzTpguf9FkZf6EE',
+  coordenadas: { x: -168653581, y: 1028496184, z: 2037023973 } }
+{ nome: '17sQZlmcmXMNG6mbtJkJHfIbfyB9bEnuVCR9LweP7vCVN4uVZKzLcknn0bsiPF0A',
+  coordenadas: { x: -6747296, y: 147154073, z: -1853219310 } }
+{ nome: 'km15dnKelJlG549PAmGg3VBI4EPGcfJVuIn4Q98eL8XKqw9mJSDJVlvu3d8EEfsc',
+  coordenadas: { x: -1520383048, y: -1269011814, z: 260211973 } }
+{ nome: 'm9gnswy5B35etWxAvJrbEhLT8rCbiXpJ5lXz0lW1FSkytzw4liiZIEQEA6g7Xn0h',
+  coordenadas: { x: -405243456, y: 358085932, z: 1286391622 } }
+{ nome: 'Z9nW6uOlZ8HQKnvbSd7EKKI9R6daNO6WhUMnoNgX1TxlDvkid1XVn1sV6CFslfo6',
+  coordenadas: { x: -1817963059, y: -1361357480, z: -1444516178 } }
+{ nome: 'AWBuEopxW3NnTw1aDnZmCAdbxnLVHirOTFDBBHBhV3fNTgUBTR1SMxTvqyDQW35w',
+  coordenadas: { x: 1035450274, y: 1910882411, z: -1699049393 } }
+{ nome: 'Sir2lSsRrrkx1p1XtmOoIWXiDo8eWHIRSlEKDurzrAyTEOStaAl3fN2c17gJJUaC',
+  coordenadas: { x: 291965607, y: -1939450499, z: 1926106996 } }
+{ nome: 'HPFITMm4THfhSLOKU0vJ7OiMtc04cevxDysE6gZBJAHlpbTqqU059dAzxh1Gy3MB',
+  coordenadas: { x: 539089414, y: -986776878, z: -1696573736 } }
+{ nome: 'nxBU7lLrToa7WbtpgCgw6NS8kWBSLTgmTSRrWbRk8Hn3T0PWlZi0Nlx50cgHnksM',
+  coordenadas: { x: 1948279095, y: -1228283670, z: 1603261376 } }
