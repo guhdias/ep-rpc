@@ -46,7 +46,7 @@ Tempos: [ 2.693492,
   1.119247,
   2.01971,
   0.894475 ]
-------- TESTE 4.0: 1 argumento e 1 retorno strings tamanhos 1 -------
+------- TESTE 4.1: 1 argumento e 1 retorno strings tamanhos 1 -------
 Execucoes: 10
 Media: 0.9336635999999998
 Desvio Padrao: 0.45716486443299637
@@ -62,7 +62,7 @@ Tempos: [ 1.556956,
   1.434065,
   0.370759,
   0.295962 ]
-------- TESTE 4.1: 1 argumento e 1 retorno strings tamanhos 2 -------
+------- TESTE 4.2: 1 argumento e 1 retorno strings tamanhos 2 -------
 Execucoes: 10
 Media: 0.4085908
 Desvio Padrao: 0.07755079099248441
@@ -78,7 +78,7 @@ Tempos: [ 0.305294,
   0.536725,
   0.480233,
   0.363456 ]
-------- TESTE 4.2: 1 argumento e 1 retorno strings tamanhos 4 -------
+------- TESTE 4.3: 1 argumento e 1 retorno strings tamanhos 4 -------
 Execucoes: 10
 Media: 0.48968599999999995
 Desvio Padrao: 0.16087297958389407
@@ -94,7 +94,7 @@ Tempos: [ 0.430418,
   0.345577,
   0.300888,
   0.337967 ]
-------- TESTE 4.3: 1 argumento e 1 retorno strings tamanhos 8 -------
+------- TESTE 4.4: 1 argumento e 1 retorno strings tamanhos 8 -------
 Execucoes: 10
 Media: 0.692402
 Desvio Padrao: 0.41511695574090923
@@ -110,7 +110,7 @@ Tempos: [ 1.894401,
   0.567374,
   0.643656,
   0.703645 ]
-------- TESTE 4.4: 1 argumento e 1 retorno strings tamanhos 16 -------
+------- TESTE 4.5: 1 argumento e 1 retorno strings tamanhos 16 -------
 Execucoes: 10
 Media: 1.9868431000000002
 Desvio Padrao: 3.6741436166162162
@@ -126,7 +126,7 @@ Tempos: [ 1.2508,
   0.37492,
   0.18703,
   0.150645 ]
-------- TESTE 4.5: 1 argumento e 1 retorno strings tamanhos 32 -------
+------- TESTE 4.6: 1 argumento e 1 retorno strings tamanhos 32 -------
 Execucoes: 10
 Media: 0.43461360000000004
 Desvio Padrao: 0.27981379712308685
@@ -142,7 +142,7 @@ Tempos: [ 0.184569,
   0.256081,
   0.498948,
   0.172466 ]
-------- TESTE 4.6: 1 argumento e 1 retorno strings tamanhos 64 -------
+------- TESTE 4.7: 1 argumento e 1 retorno strings tamanhos 64 -------
 Execucoes: 10
 Media: 0.35189229999999994
 Desvio Padrao: 0.1508942480328856
@@ -158,7 +158,7 @@ Tempos: [ 0.599488,
   0.157365,
   0.138819,
   0.137263 ]
-------- TESTE 4.7: 1 argumento e 1 retorno strings tamanhos 128 -------
+------- TESTE 4.8: 1 argumento e 1 retorno strings tamanhos 128 -------
 Execucoes: 10
 Media: 0.1964488
 Desvio Padrao: 0.06376165289231452
@@ -174,7 +174,7 @@ Tempos: [ 0.296521,
   0.147652,
   0.144632,
   0.302742 ]
-------- TESTE 4.8: 1 argumento e 1 retorno strings tamanhos 256 -------
+------- TESTE 4.9: 1 argumento e 1 retorno strings tamanhos 256 -------
 Execucoes: 10
 Media: 1.0599911
 Desvio Padrao: 1.4123406791663582
@@ -190,7 +190,7 @@ Tempos: [ 0.227054,
   0.922718,
   5.131136,
   0.838503 ]
-------- TESTE 4.9: 1 argumento e 1 retorno strings tamanhos 512 -------
+------- TESTE 4.10: 1 argumento e 1 retorno strings tamanhos 512 -------
 Execucoes: 10
 Media: 1.4630023
 Desvio Padrao: 0.7455654191552945
@@ -206,7 +206,7 @@ Tempos: [ 0.809103,
   1.548092,
   1.089782,
   0.807284 ]
-------- TESTE 4.10: 1 argumento e 1 retorno strings tamanhos 1024 -------
+------- TESTE 4.11: 1 argumento e 1 retorno strings tamanhos 1024 -------
 Execucoes: 10
 Media: 1.4973729
 Desvio Padrao: 0.6793449075401169

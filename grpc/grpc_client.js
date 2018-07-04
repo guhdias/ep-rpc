@@ -15,7 +15,7 @@ function main() {
   teste2();
   teste3();
   for (var i = 0; i < 11; i++) {
-    teste4(Math.pow(2,i), i);
+    teste4(Math.pow(2,i), i+1);
   }
   teste5();
 }

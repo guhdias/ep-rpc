@@ -19,7 +19,7 @@ eurecaClient.ready(function(serverProxy){	//Função que chama uma função expo
 	teste2(serverProxy);
 	teste3(serverProxy);
 	for (var i = 0; i < 11; i++) {
-		teste4(Math.pow(2,i), i, serverProxy);
+		teste4(Math.pow(2,i), i+1, serverProxy);
 	}
 	teste5(serverProxy);
 	//eurecaClient.disconnect(); //Disconnect, se remover do comentario finaliza o client após execução, porém prints de retorno não aparecem.
