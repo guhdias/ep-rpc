@@ -53,7 +53,7 @@ function teste1(serverProxy) {
   console.log('Desvio Padrao:', desvioPadrao(tempos));
   console.log('Maxima:', Math.max.apply(null, tempos));
   console.log('Minima:', Math.min.apply(null, tempos));
-  console.log('Tempos:', tempos);
+  //console.log('Tempos:', tempos);
 }
 
 /**
@@ -88,7 +88,7 @@ function teste2(serverProxy){
   console.log('Desvio Padrao:', desvioPadrao(tempos));
   console.log('Maxima:', Math.max.apply(null, tempos));
   console.log('Minima:', Math.min.apply(null, tempos));
-  console.log('Tempos:', tempos);
+  //console.log('Tempos:', tempos);
   
 }
 
@@ -124,7 +124,7 @@ function teste3(serverProxy){
   console.log('Desvio Padrao:', desvioPadrao(tempos));
   console.log('Maxima:', Math.max.apply(null, tempos));
   console.log('Minima:', Math.min.apply(null, tempos));
-  console.log('Tempos:', tempos);  
+  //console.log('Tempos:', tempos);  
 }
 
 /**
@@ -156,7 +156,7 @@ function teste4(tamanho, teste, serverProxy){
   console.log('Desvio Padrao:', desvioPadrao(tempos));
   console.log('Maxima:', Math.max.apply(null, tempos));
   console.log('Minima:', Math.min.apply(null, tempos));
-  console.log('Tempos:', tempos);  
+  //console.log('Tempos:', tempos);  
 }
 
 /**
@@ -200,7 +200,7 @@ function teste5(serverProxy){
   console.log('Desvio Padrao:', desvioPadrao(tempos));
   console.log('Maxima:', Math.max.apply(null, tempos));
   console.log('Minima:', Math.min.apply(null, tempos));
-  console.log('Tempos:', tempos);  
+  //console.log('Tempos:', tempos);  
 }
 
 //-------------------------------------------------------
